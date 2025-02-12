@@ -7,21 +7,46 @@ body {
     padding: 0;
 }
 
-/* Header */
+/* Header with Cover Photo */
 header {
-    background: #161b22;
+    position: relative;
     text-align: center;
-    padding: 50px 20px;
+    padding: 100px 20px;
+}
+
+.cover {
+    position: relative;
+    background: url('cover.jpeg') no-repeat center center/cover;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.cover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay with controlled opacity */
+    z-index: -1;
 }
 
 h1 {
     font-size: 2.5rem;
     color: #58a6ff;
+    z-index: 2;
 }
 
 p {
     font-size: 1.2rem;
     color: #8b949e;
+    z-index: 2;
 }
 
 /* Navigation Bar */
