@@ -3,43 +3,53 @@ body {
     font-family: "Arial", sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f9fa;
+    background: linear-gradient(to right, #74ebd5, #acb6e5);
     color: #333;
-    line-height: 1.6;
+    text-align: center;
 }
 
 /* Header */
 header {
     background: #2c3e50;
     color: white;
-    text-align: center;
-    padding: 20px;
+    padding: 50px 0;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2.5rem;
+.profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid white;
 }
 
-header p {
-    font-size: 1.2rem;
+.profile h1 {
+    margin: 10px 0;
 }
 
-/* Navigation Bar */
+.btn {
+    background: #ff5733;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: #c70039;
+}
+
+/* Navigation */
 nav {
     background: #34495e;
     padding: 10px;
     position: sticky;
     top: 0;
-    width: 100%;
-    text-align: center;
     z-index: 1000;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
-    margin: 0;
 }
 
 nav ul li {
@@ -53,34 +63,46 @@ nav ul li a {
     font-size: 1.1rem;
 }
 
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
 /* Sections */
 section {
-    padding: 20px;
+    padding: 50px;
     background: white;
     margin: 20px auto;
-    max-width: 800px;
+    max-width: 900px;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 10px gray;
 }
 
-h2 {
+/* Research & Project Cards */
+.research-container, .projects-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.research-card, .project-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 250px;
+    margin: 10px;
+}
+
+.research-card h3, .project-card h3 {
     color: #2c3e50;
+}
+
+.project-card a {
+    text-decoration: none;
+    color: #ff5733;
+    font-weight: bold;
 }
 
 /* Footer */
 footer {
-    text-align: center;
-    padding: 10px;
     background: #2c3e50;
     color: white;
+    padding: 10px;
     margin-top: 20px;
-}
-
-footer a {
-    color: #ffdd57;
-    text-decoration: none;
 }
