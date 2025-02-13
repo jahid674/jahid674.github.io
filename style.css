@@ -7,11 +7,15 @@ body {
     padding: 0;
 }
 
-/* Cover Image */
+/* Cover Image with Name & Affiliation */
 .cover {
     width: 100%;
-    height: 250px;
+    height: 300px;
     background: url('cover.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     position: relative;
 }
 
@@ -20,7 +24,20 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Dark overlay for better readability */
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for readability */
+}
+
+.cover-text {
+    position: relative;
+    color: #ffffff;
+    font-size: 1.5rem;
+    z-index: 1;
+}
+
+.cover-text h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #58a6ff;
 }
 
 /* Navigation */
