@@ -1,18 +1,63 @@
 /* General Styles */
 body {
     font-family: "Courier New", monospace;
-    background-color: #0d1117;
-    color: #c9d1d9;
+    background-color: #ffffff; /* Changed to white */
+    color: #000000; /* Changed to black */
     margin: 0;
     padding: 0;
 }
 
+/* Cover Section */
+.cover {
+    width: 100%;
+    height: 230px;
+    background: url('cover.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
 
+/* Light Gradient Overlay */
+.cover-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(240, 240, 240, 0.5)); /* Lighter overlay */
+}
 
+/* Text Styling */
+.cover-text {
+    position: relative;
+    color: #000000; /* Black text */
+    z-index: 1;
+    text-align: center;
+    padding: 10px;
+}
 
-/* Navigation */
+/* Name Styling */
+.cover-text h1 {
+    font-size: 2.6rem;
+    font-weight: bold;
+    color: #000000; /* Black text */
+    margin-bottom: 3px;
+}
+
+/* Compact Affiliation */
+.cover-text p {
+    font-size: 1rem;
+    color: #333333; /* Slightly lighter black for contrast */
+    margin: 0 auto;
+    max-width: 90%;
+    line-height: 1.2;
+    opacity: 1;
+}
+
+/* Navigation Bar */
 nav {
-    background: #21262d;
+    background: #f8f8f8; /* Light gray for contrast */
     padding: 10px;
     text-align: center;
     position: sticky;
@@ -31,7 +76,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #58a6ff;
+    color: #000000; /* Black text */
     text-decoration: none;
     font-size: 1.1rem;
 }
@@ -40,7 +85,7 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* About Page Layout (Desktop-Friendly) */
+/* About Section */
 .about-container {
     display: flex;
     max-width: 1000px;
@@ -73,74 +118,41 @@ nav ul li a:hover {
     max-width: 800px;
     margin: 50px auto;
     text-align: center;
-    background: #1e252e;  /* Slightly lighter background for contrast */
+    background: #f0f0f0; /* Light gray for subtle contrast */
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(88, 166, 255, 0.3);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Make text color fully visible */
 #contact h2 {
-    color: #ffffff;
+    color: #000000;
 }
 
 #contact p {
-    color: #ffffff;
+    color: #000000;
     font-size: 1.2rem;
 }
 
-/* Make links more visible */
-#contact a {
-    color: #58a6ff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-#contact a:hover {
-    text-decoration: underline;
-}
 /* Footer */
 footer {
     text-align: center;
     padding: 15px;
-    background: #161b22;
-    color: #8b949e;
+    background: #f8f8f8;
+    color: #000000;
 }
 
 /* Responsive Design - Mobile Adjustments */
 @media screen and (max-width: 768px) {
     .cover {
-        height: 200px;
+        height: 180px;
     }
 
     .cover-text h1 {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
     .cover-text p {
-        font-size: 1rem;
-    }
-
-    nav ul {
-        padding: 0;
-    }
-
-    nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
-
-    .about-container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .about-text {
-        padding: 10px;
-    }
-
-    .about-image img {
-        width: 100%;
-        max-width: 250px;
+        font-size: 0.9rem;
+        line-height: 1.1;
     }
 }
