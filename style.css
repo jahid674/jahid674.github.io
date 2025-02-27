@@ -1,8 +1,8 @@
 /* General Styles */
 body {
-    font-family: "Poppins", sans-serif;
-    background-color: #0d1117;
-    color: #e6edf3;
+    font-family: "Montserrat", sans-serif;
+    background: linear-gradient(to right, #141E30, #243B55); /* Deep navy gradient */
+    color: #ffffff;
     margin: 0;
     padding: 0;
 }
@@ -10,7 +10,7 @@ body {
 /* Cover Section */
 .cover {
     width: 100%;
-    height: 230px;
+    height: 250px;
     background: url('cover.jpg') no-repeat center center/cover;
     display: flex;
     justify-content: center;
@@ -25,7 +25,7 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(20, 20, 20, 0.6));
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.85), rgba(20, 20, 20, 0.7));
 }
 
 /* Text Styling */
@@ -34,36 +34,36 @@ body {
     z-index: 1;
     text-align: center;
     padding: 10px;
-    text-shadow: 3px 3px 15px rgba(88, 166, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.2);
+    text-shadow: 3px 3px 20px rgba(255, 255, 255, 0.4), 0 0 12px rgba(88, 166, 255, 0.5);
     font-weight: 600;
     letter-spacing: 1px;
 }
 
-/* Name Styling - Glossy & Retractable */
+/* Name Styling - Glossy & Attractive */
 .cover-text h1 {
-    font-size: 2.8rem;
+    font-size: 3rem;
     font-weight: bold;
-    color: #8ecfff;
+    color: #00d9ff;
     text-transform: uppercase;
-    text-shadow: 0px 0px 12px rgba(88, 166, 255, 0.7), 0px 0px 25px rgba(255, 255, 255, 0.5);
-    margin-bottom: 5px;
+    text-shadow: 0px 0px 15px rgba(0, 217, 255, 0.8), 0px 0px 30px rgba(255, 255, 255, 0.7);
+    margin-bottom: 10px;
     transition: all 0.3s ease-in-out;
 }
 
 /* Hover Effect for Glossy Look */
 .cover-text h1:hover {
-    color: #58a6ff;
-    text-shadow: 0px 0px 18px rgba(88, 166, 255, 1), 0px 0px 30px rgba(255, 255, 255, 0.8);
+    color: #00a6ff;
+    text-shadow: 0px 0px 20px rgba(0, 217, 255, 1), 0px 0px 35px rgba(255, 255, 255, 1);
 }
 
-/* Subtext Styling - Slight Glow */
+/* Subtext Styling - More Visible */
 .cover-text p {
-    font-size: 1.1rem;
-    color: #e6edf3;
+    font-size: 1.2rem;
+    color: #ffffff;
     max-width: 90%;
-    line-height: 1.3;
-    opacity: 0.85;
-    text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.2);
+    line-height: 1.5;
+    opacity: 0.9;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
     transition: opacity 0.3s ease-in-out;
 }
 
@@ -74,7 +74,7 @@ body {
 
 /* Navigation */
 nav {
-    background: #21262d;
+    background: #1c2733;
     padding: 10px;
     text-align: center;
     position: sticky;
@@ -93,13 +93,15 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #58a6ff;
+    color: #00d9ff;
     text-decoration: none;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 
 nav ul li a:hover {
     text-decoration: underline;
+    color: #00a6ff;
 }
 
 /* About Page Layout */
@@ -123,11 +125,14 @@ nav ul li a:hover {
     width: 80%;
     max-width: 300px;
     border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.3);
 }
 
 .about-text {
     flex: 2;
     padding: 20px;
+    font-size: 1.1rem;
+    line-height: 1.6;
 }
 
 /* Contact Section */
@@ -136,29 +141,34 @@ nav ul li a:hover {
     margin: 50px auto;
     text-align: center;
     background: #1e252e;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(88, 166, 255, 0.3);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 15px rgba(88, 166, 255, 0.5);
 }
 
 /* Contact Section Text */
 #contact h2 {
     color: #ffffff;
+    font-size: 2rem;
+    text-shadow: 0px 0px 12px rgba(255, 255, 255, 0.6);
 }
 
 #contact p {
     color: #ffffff;
     font-size: 1.2rem;
+    margin: 10px 0;
 }
 
 #contact a {
-    color: #58a6ff;
+    color: #00d9ff;
     text-decoration: none;
     font-weight: bold;
+    font-size: 1.1rem;
 }
 
 #contact a:hover {
     text-decoration: underline;
+    color: #00a6ff;
 }
 
 /* Footer */
@@ -167,20 +177,21 @@ footer {
     padding: 15px;
     background: #161b22;
     color: #8b949e;
+    font-size: 1rem;
 }
 
 /* Mobile Adjustments */
 @media screen and (max-width: 768px) {
     .cover {
-        height: 180px;
+        height: 200px;
     }
 
     .cover-text h1 {
-        font-size: 2.2rem;
+        font-size: 2.5rem;
     }
 
     .cover-text p {
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
 
     nav ul {
