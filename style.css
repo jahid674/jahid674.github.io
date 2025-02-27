@@ -145,8 +145,8 @@ nav ul li a:hover {
 }
 
 .about-image img {
-    width: 100%;
-    max-width: 400px;
+    width: 120%;
+    max-width: 450px;
     border-radius: 10px;
 }
 
