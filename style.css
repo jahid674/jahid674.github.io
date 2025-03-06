@@ -206,7 +206,7 @@ footer {
 /* Full-Screen A4 Display */
 .cv-frame {
     width: 80%; /* Occupies 80% of the screen width */
-    height: 90vh; /* Takes up 90% of the screen height */
+    height: 100vh; /* Takes up 90% of the screen height */
     border: none;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
 }
@@ -215,7 +215,7 @@ footer {
 @media screen and (max-width: 768px) {
     .cv-frame {
         width: 95%; /* Makes it more readable on smaller screens */
-        height: 85vh;
+        height: 100vh;
     }
 }
 /* Responsive Design - Mobile Adjustments */
