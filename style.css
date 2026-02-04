@@ -9,7 +9,7 @@ body {
 
 /* Cover Section */
 .cover {
-    width: 100%;
+    width: 150%;
     height: 230px; /* Reduced height for a compact look */
     background: url('cover.jpg') no-repeat center center/cover;
     display: flex;
