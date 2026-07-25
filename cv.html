@@ -1,41 +1,23 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV - Jahid Hasan</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="View and download Jahid Hasan's current resume.">
+  <title>Resume | Jahid Hasan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <!-- Navigation -->
-    <nav>
-        <ul>
-            <li><a href="index.html">About</a></li>
-            <li><a href="education.html">Education</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="cv.html">CV</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-
-    <!-- CV Section -->
-    <section id="cv">
-        <h2>Jahid Hasan's CV</h2>
-        <p>You can view or download my CV below:</p>
-        
-        <div class="cv-container">
-            <iframe src="Jahid_resume (3).pdf" class="cv-frame"></iframe>
-        </div>
-
-        <br>
-        <a href="Jahid_resume (3).pdf" download class="btn">Download CV</a>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Jahid Hasan</p>
-    </footer>
-
+  <header class="site-header">
+    <a class="brand" href="index.html">JH<span>.</span></a><button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" aria-label="Primary navigation"><a href="index.html">About</a><a href="experience.html">Experience</a><a href="projects.html">Research</a><a href="education.html">Education</a><a class="active" href="cv.html">Resume</a><a href="contact.html">Contact</a></nav>
+  </header>
+  <main class="page-shell resume-page">
+    <header class="page-intro resume-intro"><div><p class="eyebrow">Current resume</p><h1>Experience at a glance.</h1><p>Research, publications, teaching, technical projects, and leadership.</p></div><a class="button primary" href="Jahid_resume_remote%20(8).pdf" download>Download PDF ↓</a></header>
+    <div class="resume-frame-wrap"><iframe src="Jahid_resume_remote%20(8).pdf" title="Jahid Hasan resume" class="resume-frame"></iframe></div>
+    <p class="mobile-resume-link">The embedded viewer may be unavailable on some phones. <a href="Jahid_resume_remote%20(8).pdf" target="_blank">Open the resume directly.</a></p>
+  </main>
+  <footer><p>© <span data-year></span> Jahid Hasan</p><p>Data-centric AI · Fairness · Reliability</p></footer><script src="script.js"></script>
 </body>
 </html>

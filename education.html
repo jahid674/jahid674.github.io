@@ -1,65 +1,53 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Education - Jahid Hasan</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Education, skills, and professional development of Jahid Hasan.">
+  <title>Education | Jahid Hasan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-     <!-- Navigation -->
-    <nav>
-        <ul>
-            <li><a href="index.html">About</a></li>
-            <li><a href="education.html">Education</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="cv.html">CV</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-
-    <section>
-        <h1>Education</h1>
-        <ul>
-            <li><strong>Ph.D. in Computer and Information Technology</strong> - Purdue University, West Lafayette (2023 - ongoing) </strong> - CGPA 3.94
-        </br> Supervisor: <a href="https://romilapradhan.github.io/romila/" target="_blank" style="color: #1E90FF; text-decoration: none;">Dr. Romila Pradhan</a>
-        
-        </br>
-        </br> Glimpse of some courses that I have taken for doctoral degree:
-                <ul>
-                    <li>CNIT 51900: Natural Language Technology</li>
-                    <li>CNIT 58100: Responsible Data Management</li>
-                    <li>CS 57300: Data Mining</li>
-                    <li>ECE 57000: Artificial Intelligence</li>
-                    <li>CNIT 63200: Deep Learning for Cybersecurity and Privacy</li>
-                    <li>CNIT 57000: IT Data Analytics</li>
-                    <li>CNIT 62500: Research Methodology</li>
-                </ul>
-            </li>
-
-        </br>
-            <li><strong>M.S. in Mathematics</strong> - University of Dhaka, Dhaka (2022 - 2023)</strong> - CGPA 3.81</li>
-            Dissertation Title: 'Age-Distributed Model of Communicable Disease in Heterogeneous Environment'
-        </br> Supervisor: <a href="https://www.du.ac.bd/faculty/faculty_details/MAT/146" target="_blank" style="color: #1E90FF; text-decoration: none;"> Dr. Md. Shahidul Islam</a>
-        </br> Co-Supervisor: <a href="https://www.du.ac.bd/faculty/faculty_details/MAT/163" target="_blank" style="color: #1E90FF; text-decoration: none;"> Dr. Md. Kamrujjaman</a>
-            
-            <br>
-            <br> Some courses that I have taken for master's degree:
-                <ul>
-                    <li>MTMS 518: Asymptotic and Perturbation Theory</li>
-                    <li>MTMS 515: Dynamical Systems</li>
-                    <li>MTMS 519: Financial Risk Management</li>
-                    <li>MTH 402: Measure Theory</li>
-                    <li>MTH 416: Stochastic Optimization</li>
-                </ul>
-            </br><li><strong>B.S. in Mathematics</strong> - University of Dhaka, Dhaka (2017 - 2021)</strong> - CGPA 3.69</li>
-        </ul>
+  <header class="site-header">
+    <a class="brand" href="index.html">JH<span>.</span></a><button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" aria-label="Primary navigation"><a href="index.html">About</a><a href="experience.html">Experience</a><a href="projects.html">Research</a><a class="active" href="education.html">Education</a><a href="cv.html">Resume</a><a href="contact.html">Contact</a></nav>
+  </header>
+  <main class="page-shell">
+    <header class="page-intro"><p class="eyebrow">Education</p><h1>A mathematical foundation for responsible computing.</h1><p>My training connects rigorous mathematical reasoning with machine learning, data systems, and human-centered research.</p></header>
+    <section class="degree-list">
+      <article>
+        <div class="degree-year">2023 — 2027</div>
+        <div><p class="role-type">Purdue University · West Lafayette, Indiana</p><h2>Ph.D. in Computer and Information Technology</h2><p class="degree-detail">GPA 3.94 · Advisor: <a href="https://romilapradhan.github.io/romila/" target="_blank" rel="noreferrer">Dr. Romila Pradhan</a></p><p><strong>Dissertation:</strong> Intelligent Data-Centric Systems for Fair, Robust, and Adaptive Data Science Pipelines</p></div>
+      </article>
+      <article>
+        <div class="degree-year">2022 — 2023</div>
+        <div><p class="role-type">University of Dhaka · Bangladesh</p><h2>M.S. in Mathematics</h2><p class="degree-detail">GPA 3.81 · Advisor: Dr. Md. Kamrujjaman</p><p><strong>Thesis:</strong> Age-Distributed Model of Communicable Disease in a Heterogeneous Environment</p></div>
+      </article>
+      <article>
+        <div class="degree-year">2017 — 2021</div>
+        <div><p class="role-type">University of Dhaka · Bangladesh</p><h2>B.S. in Mathematics</h2><p class="degree-detail">GPA 3.69</p></div>
+      </article>
     </section>
-
-    <footer>
-        <p>&copy; 2024 Jahid Hasan</p>
-    </footer>
-
+    <section class="skills-block">
+      <div class="section-heading"><p class="eyebrow">Technical toolkit</p><h2>From modeling to production-minded systems</h2></div>
+      <div class="skills-grid">
+        <article><h3>Programming</h3><p>Python · SQL · R · MATLAB · Fortran · SAS · SPSS</p></article>
+        <article><h3>Machine learning</h3><p>PyTorch · TensorFlow · scikit-learn · Hugging Face · NLP · LLMs</p></article>
+        <article><h3>Retrieval &amp; agents</h3><p>RAG · LangChain · embeddings · vector databases · agentic systems</p></article>
+        <article><h3>Data &amp; visualization</h3><p>Pandas · NumPy · MySQL · MongoDB · Tableau · Matplotlib · Seaborn</p></article>
+      </div>
+    </section>
+    <section class="awards-block">
+      <div class="section-heading"><p class="eyebrow">Recognition</p><h2>Awards and professional development</h2></div>
+      <ul class="award-list">
+        <li><span>2025</span><strong>US Microsoft EDBT Fellowship</strong></li>
+        <li><span>2024</span><strong>CASMI Digital Safety Workshop Travel Grant</strong></li>
+        <li><span>2022</span><strong>National Science and Technology Fellowship, Bangladesh</strong></li>
+        <li><span>2022</span><strong>University of Dhaka Merit Scholarship</strong></li>
+      </ul>
+    </section>
+  </main>
+  <footer><p>© <span data-year></span> Jahid Hasan</p><p>Data-centric AI · Fairness · Reliability</p></footer><script src="script.js"></script>
 </body>
 </html>
