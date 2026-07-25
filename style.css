@@ -301,7 +301,7 @@ footer {
     display: grid;
     grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
     gap: 46px;
-    align-items: center;
+    align-items: start;
     margin-bottom: 42px;
     padding: 46px;
     background: #ffffff;
@@ -311,7 +311,7 @@ footer {
     position: relative;
 }
 
-.research-project--reverse .paper-visual {
+.research-project--reverse .research-visual-column {
     grid-column: 2;
 }
 
@@ -332,6 +332,28 @@ footer {
     background: #f8fafc;
     border: 1px solid #e3e7eb;
     border-radius: 10px;
+}
+
+.research-visual-column {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.visual-contributions {
+    padding: 20px 22px;
+    background: #f8fafc;
+    border-left: 3px solid #0056d2;
+    border-radius: 0 8px 8px 0;
+}
+
+.visual-contributions h3 {
+    margin: 0 0 9px;
+    font-size: 1rem;
+}
+
+.visual-contributions .project-points {
+    margin-bottom: 0;
 }
 
 .paper-visual img {
@@ -376,9 +398,9 @@ footer {
     top: 13px;
     right: 13px;
     z-index: 2;
-    width: 43px;
-    height: 43px;
-    padding: 3px;
+    width: 56px;
+    height: 56px;
+    padding: 4px;
     background: rgba(255, 255, 255, 0.95);
     border: 1px solid #c9ddca;
     border-radius: 50%;
@@ -480,13 +502,13 @@ footer {
         padding: 30px;
     }
 
-    .research-project--reverse .paper-visual,
+    .research-project--reverse .research-visual-column,
     .research-project--reverse .research-copy {
         grid-column: 1;
         grid-row: auto;
     }
 
-    .research-project--reverse .paper-visual {
+    .research-project--reverse .research-visual-column {
         order: 0;
     }
 }
@@ -512,8 +534,8 @@ footer {
     .artifact-badge-corner {
         top: 10px;
         right: 10px;
-        width: 36px;
-        height: 36px;
+        width: 46px;
+        height: 46px;
     }
 
 }

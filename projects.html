@@ -59,14 +59,24 @@
                title="Open the PipeLens research artifact" aria-label="Open the PipeLens research artifact">
                 <img src="artifact-assets/acm-artifacts-available.png" alt="ACM Artifacts Available">
             </a>
-            <figure class="paper-visual">
-                <img src="paper-assets/pipelens-overview.png"
-                     alt="PipeLens example showing how a language translator, revised blocking attributes, and a new matching threshold repair a failing entity-matching pipeline.">
-                <figcaption>
-                    PipeLens identifies the smallest meaningful intervention that turns a failing pipeline into a
-                    successful one. Figure excerpted from the paper.
-                </figcaption>
-            </figure>
+            <div class="research-visual-column">
+                <figure class="paper-visual">
+                    <img src="paper-assets/pipelens-overview.png"
+                         alt="PipeLens example showing how a language translator, revised blocking attributes, and a new matching threshold repair a failing entity-matching pipeline.">
+                    <figcaption>
+                        PipeLens identifies the smallest meaningful intervention that turns a failing pipeline into a
+                        successful one. Figure excerpted from the paper.
+                    </figcaption>
+                </figure>
+                <div class="visual-contributions">
+                    <h3>Key contributions</h3>
+                    <ul class="project-points">
+                        <li>Finds causally verified repairs rather than reporting correlations with failure.</li>
+                        <li>Supports database, machine learning, and retrieval-augmented generation pipelines.</li>
+                        <li>Improves performance by 5–40% over Learn2Clean and BugDoc across evaluated tasks.</li>
+                    </ul>
+                </div>
+            </div>
             <div class="research-copy">
                 <div class="project-meta">
                     <a class="conference-link" href="https://www.vldb.org/2026/" target="_blank">VLDB 2026 ↗</a>
@@ -86,12 +96,6 @@
                     historical executions guide a learned proxy utility model toward promising repairs, reducing the
                     need for exhaustive search.
                 </p>
-                <h3>Key contributions</h3>
-                <ul class="project-points">
-                    <li>Finds causally verified repairs rather than reporting correlations with failure.</li>
-                    <li>Supports database, machine learning, and retrieval-augmented generation pipelines.</li>
-                    <li>Improves performance by 5–40% over Learn2Clean and BugDoc across evaluated tasks.</li>
-                </ul>
                 <div class="project-actions">
                     <a href="My%20paper/Optimizing_Data_Science_Pipelines%20(58).pdf" target="_blank">Read the paper</a>
                     <a href="https://github.com/jahid674/PipeLens" target="_blank">View code</a>
@@ -104,14 +108,24 @@
                title="Open the DataSift research artifact" aria-label="Open the DataSift research artifact">
                 <img src="artifact-assets/acm-artifacts-available.png" alt="ACM Artifacts Available">
             </a>
-            <figure class="paper-visual">
-                <img src="paper-assets/datasift-overview.png"
-                     alt="DataSift workflow showing a data pool partitioned for reinforcement learning and influence-based data valuation before selected batches are retained.">
-                <figcaption>
-                    DataSift learns where to search, values candidate samples, and retains only batches that improve
-                    the target objective. Figure excerpted from the paper.
-                </figcaption>
-            </figure>
+            <div class="research-visual-column">
+                <figure class="paper-visual">
+                    <img src="paper-assets/datasift-overview.png"
+                         alt="DataSift workflow showing a data pool partitioned for reinforcement learning and influence-based data valuation before selected batches are retained.">
+                    <figcaption>
+                        DataSift learns where to search, values candidate samples, and retains only batches that improve
+                        the target objective. Figure excerpted from the paper.
+                    </figcaption>
+                </figure>
+                <div class="visual-contributions">
+                    <h3>Key contributions</h3>
+                    <ul class="project-points">
+                        <li>Connects adaptive data acquisition with model fairness at an early pipeline stage.</li>
+                        <li>Resolves most unfairness using as little as 4% additional data in the reported experiments.</li>
+                        <li>Preserves accuracy, with at most a 2.6% decrease and gains as high as 27.4%.</li>
+                    </ul>
+                </div>
+            </div>
             <div class="research-copy">
                 <div class="project-meta">
                     <a class="conference-link" href="https://edbticdt2026.github.io/" target="_blank">EDBT 2026 ↗</a>
@@ -131,12 +145,6 @@
                     samples. A candidate batch is retained only when evaluation shows that it moves the model toward
                     the desired fairness objective.
                 </p>
-                <h3>Key contributions</h3>
-                <ul class="project-points">
-                    <li>Connects adaptive data acquisition with model fairness at an early pipeline stage.</li>
-                    <li>Resolves most unfairness using as little as 4% additional data in the reported experiments.</li>
-                    <li>Preserves accuracy, with at most a 2.6% decrease and gains as high as 27.4%.</li>
-                </ul>
                 <div class="project-actions">
                     <a href="My%20paper/DataSift_Camera_Ready%20(7).pdf" target="_blank">Read the paper</a>
                     <a href="https://youtu.be/rHqfi6IJ0CE" target="_blank">Watch the talk</a>
@@ -149,14 +157,24 @@
                title="Open the Sentinel research artifact" aria-label="Open the Sentinel research artifact">
                 <img src="artifact-assets/acm-artifacts-available.png" alt="ACM Artifacts Available">
             </a>
-            <figure class="paper-visual">
-                <img src="paper-assets/sentinel-overview.png"
-                     alt="Sentinel workflow showing preprocessing, drift simulation, vulnerability scoring, performance estimation, and pipeline repair recommendations.">
-                <figcaption>
-                    Sentinel connects simulated drift to a vulnerability score, a practitioner-facing explanation,
-                    and an actionable repair. Figure excerpted from the paper.
-                </figcaption>
-            </figure>
+            <div class="research-visual-column">
+                <figure class="paper-visual">
+                    <img src="paper-assets/sentinel-overview.png"
+                         alt="Sentinel workflow showing preprocessing, drift simulation, vulnerability scoring, performance estimation, and pipeline repair recommendations.">
+                    <figcaption>
+                        Sentinel connects simulated drift to a vulnerability score, a practitioner-facing explanation,
+                        and an actionable repair. Figure excerpted from the paper.
+                    </figcaption>
+                </figure>
+                <div class="visual-contributions">
+                    <h3>Key contributions</h3>
+                    <ul class="project-points">
+                        <li>Turns abstract drift measures into component-level, practitioner-facing explanations.</li>
+                        <li>Identifies tolerable thresholds and predicts degradation before costly failures occur.</li>
+                        <li>In the paper’s demonstration, a suggested repair reduced observed loss from about 6% to 2% without full re-optimization.</li>
+                    </ul>
+                </div>
+            </div>
             <div class="research-copy">
                 <div class="project-meta">
                     <a class="conference-link" href="https://icde2026.github.io/" target="_blank">IEEE ICDE 2026 ↗</a>
@@ -175,12 +193,6 @@
                     vulnerability scores, and learns a lightweight mapping from vulnerability to expected performance
                     loss. It then generates a readable robustness report and ranks compatible pipeline repairs.
                 </p>
-                <h3>Key contributions</h3>
-                <ul class="project-points">
-                    <li>Turns abstract drift measures into component-level, practitioner-facing explanations.</li>
-                    <li>Identifies tolerable thresholds and predicts degradation before costly failures occur.</li>
-                    <li>In the paper’s demonstration, a suggested repair reduced observed loss from about 6% to 2% without full re-optimization.</li>
-                </ul>
                 <div class="project-actions">
                     <a href="My%20paper/Explaining_Pipelines%20(13).pdf" target="_blank">Read the paper</a>
                     <a href="My%20paper/ICDE_DEMO__Sentinel%20(8).pdf" target="_blank">View the ICDE demo</a>
