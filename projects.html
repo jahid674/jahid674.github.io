@@ -1,63 +1,122 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Selected publications and projects by Jahid Hasan in data-centric AI and machine learning systems.">
-  <title>Research | Jahid Hasan</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Jahid Hasan</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="site-header">
-    <a class="brand" href="index.html">JH<span>.</span></a>
-    <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
-    <nav id="site-nav" aria-label="Primary navigation">
-      <a href="index.html">About</a><a href="experience.html">Experience</a><a class="active" href="projects.html">Research</a><a href="education.html">Education</a><a href="cv.html">Resume</a><a href="contact.html">Contact</a>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">About</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="cv.html">CV</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
     </nav>
-  </header>
-  <main class="page-shell">
-    <header class="page-intro">
-      <p class="eyebrow">Selected research</p>
-      <h1>Better data. More dependable systems.</h1>
-      <p>My work automates data-intensive stages of machine learning—from finding the right data to diagnosing and repairing the pipelines that use it.</p>
-    </header>
 
-    <section class="project-stack">
-      <article class="project-card" id="agentic-ai">
-        <div class="project-number">01</div>
-        <div class="project-content"><div class="tags"><span>Ongoing</span><span>Agentic AI</span></div><h2>Agentic AI for Data Science Pipeline Debugging</h2><p>Developing a multi-agent framework that diagnoses and repairs pipelines affected by data-quality problems, component failures, and suboptimal configurations. Stage-level agents coordinate local decisions so repairs improve global reliability and performance.</p></div>
-      </article>
-      <article class="project-card" id="pipelens">
-        <div class="project-number">02</div>
-        <div class="project-content"><div class="tags"><span>VLDB 2026</span><span>To appear</span></div><h2>PipeLens</h2><p>Identifies targeted, interpretable interventions in malfunctioning database, ML, and retrieval-augmented generation pipelines. PipeLens uses data profiles and historical executions to recommend repairs, improving utility by 5–40% over Learn2Clean and BugDoc.</p><p class="authors">Jahid Hasan, Stanley Jiang, Tejendra Singh, Sainyam Galhotra, Romila Pradhan, and Divesh Srivastava</p></div>
-      </article>
-      <article class="project-card" id="datasift">
-        <div class="project-number">03</div>
-        <div class="project-content"><div class="tags"><span>EDBT 2026</span><span>Published</span></div><h2>DataSift</h2><p>A reinforcement-learning framework that identifies and acquires high-value training samples through adaptive data valuation. It improves acquisition efficiency, predictive performance, and fairness by 30–60% over competing approaches.</p><p class="authors">Jahid Hasan and Romila Pradhan</p><div class="project-links"><a href="DataSift_CR.pdf" target="_blank">Read paper ↗</a><a href="https://youtu.be/rHqfi6IJ0CE" target="_blank" rel="noreferrer">Watch talk ↗</a></div></div>
-      </article>
-      <article class="project-card" id="sentinel">
-        <div class="project-number">04</div>
-        <div class="project-content"><div class="tags"><span>IEEE ICDE 2026</span><span>Accepted</span></div><h2>Sentinel</h2><p>Introduces component- and pipeline-level robustness measures that explain how optimized ML pipelines degrade under deployment-time distribution shifts, enabling targeted reconfiguration without complete retraining.</p><p class="authors">Jahid Hasan, Jingya Wang, and Romila Pradhan</p><div class="project-links"><a href="https://dl.acm.org/doi/10.1145/3736733.3736744" target="_blank" rel="noreferrer">Workshop paper ↗</a><a href="https://www.youtube.com/watch?v=Sqqe0cHV4F8&t=253s" target="_blank" rel="noreferrer">Watch talk ↗</a></div></div>
-      </article>
-      <article class="project-card" id="fanshield">
-        <div class="project-number">05</div>
-        <div class="project-content"><div class="tags"><span>Submitted · ACM CHI 2027</span><span>Extended Reality</span></div><h2>FANSHIELD</h2><p>A predictive obstacle-assessment system for outdoor extended reality. An LSTM uses headset, gaze, controller, and eyeglass motion signals to anticipate movement and reduce collision risk in immersive environments.</p></div>
-      </article>
+    <!-- Projects Section -->
+    <section>
+        <h1>Projects Completed So Far...</h1>
+
+        <ul>
+            <li>
+                <strong>PipeLens: Identifying Interventions for Optimizing Data Science Pipelines</strong>
+                <br> 
+                <srtong>Submitted</strong> <em>@ International Conference on Very Large Data Bases (VLDB) 2026</em>
+                
+                <br><br>
+                Highlights of this work:
+                <ul>
+                    <li>PipeLens treats the entire pipeline—data cleaning, transformations, feature engineering, and models—as the object of diagnosis and repair.</li>
+                    <li>Instead of guessing or correlating failures, PipeLens applies causally verified interventions (parameter changes, module insertion, deletion, or reordering) to identify true root causes.</li>
+                    <li>Uses historical pipeline executions to learn a proxy utility model, guiding automatic repairs toward changes that are most likely to improve performance.</li>
+                    <li>Automatically reasons over dataset properties to align failing data with previously successful distributions.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <ul>
+            <li>
+                <strong>DataSift: Selective Data Expansion for Model Performance</strong>
+                <br>
+                <strong>Published </strong> <em> @ International Conference on Extended Database Technology (EDBT) 2026</em>
+                <a href="/DataSift_CR.pdf" target="_blank"
+                   style="color: #1E90FF; text-decoration: none;">
+                   [View Paper]
+                </a>
+                <a href="https://youtu.be/rHqfi6IJ0CE"
+                   target="_blank"
+                   style="color:#FF0000; text-decoration:none;">
+                   [<img src="https://img.icons8.com/color/48/youtube-play.png"
+                        alt="YouTube"
+                        style="width:16px; vertical-align:middle; margin-right:4px;">
+                   Watch Video]
+                </a>
+                
+                <br><br>
+                Highlights of this work:
+                <ul>
+                    <li>Developed a novel framework, <strong>DataSift</strong>, to acquire selective data points for fair and accurate ML training</li>
+                    <li>Integrated a Multi-Armed Bandit algorithm into the data acquisition process</li>
+                    <li>Implemented influence functions to improve framework effectiveness and efficiency</li>
+                    <li>Experimental results outperform existing baselines</li>
+                </ul>
+            </li>
+        </ul>
+
+        
+
+        <!-- Project 1 -->
+        <ul>
+            <li>
+                <strong>Sentinel: Explanations for machine learning pipelines under data drift.</strong>
+                <br>
+                <strong>Published </strong> <em> @ IEEE International Conference on Data Engineering (ICDE) 2026</em>
+                <br>
+                Workshop paper <strong>Published</strong> 
+                <em>@ ACM SIGMOD International Conference on Management of Data 2025</em>
+                
+                <a href="https://dl.acm.org/doi/abs/10.1145/3736733.3736744"
+                   style="color:#1E90FF; text-decoration:none; margin-right:10px;">
+                   [View Paper]
+                </a>
+                
+                <a href="https://www.youtube.com/watch?v=Sqqe0cHV4F8&t=253s"
+                   target="_blank"
+                   style="color:#FF0000; text-decoration:none;">
+                   [<img src="https://img.icons8.com/color/48/youtube-play.png"
+                        alt="YouTube"
+                        style="width:16px; vertical-align:middle; margin-right:4px;">
+                   Watch Video]
+                </a>
+
+                
+                <br><br>
+                Highlights of this work:
+                <ul>
+                    <li>Quantifying and assessing the robustness of data preprocessing pipelines under data shift</li>
+                    <li>Explaining pipeline robustness and model vulnerability for end-users</li>
+                    <li>Estimating performance degradation due to future data shifts</li>
+                </ul>
+            </li>
+        </ul>
+
+        <!-- Project 2 -->
+       
+
+
+
     </section>
 
-    <section class="code-projects">
-      <div class="section-heading"><p class="eyebrow">Applied projects</p><h2>Selected implementations</h2></div>
-      <div class="compact-grid">
-        <article><h3>Conversational Shopping Assistant</h3><p>End-to-end RAG pipeline for context-aware product recommendations with latency-conscious retrieval.</p></article>
-        <article><h3>In-Sentence Pun Detection</h3><p>Transformer-based semantic ambiguity detection using contextual embeddings and linguistic features.</p><a class="text-link" href="https://github.com/jahid674/NLT-In-sentence-pun-detection" target="_blank" rel="noreferrer">View code →</a></article>
-        <article><h3>ML Bias Mitigation</h3><p>Data transformations enforcing fairness constraints, with cross-dataset analysis of accuracy–fairness trade-offs.</p><a class="text-link" href="https://github.com/jahid674/ML-Bias-Mitigation-with-Reweighing-Preprocessing" target="_blank" rel="noreferrer">View code →</a></article>
-      </div>
-    </section>
-  </main>
-  <footer><p>© <span data-year></span> Jahid Hasan</p><p>Data-centric AI · Fairness · Reliability</p></footer>
-  <script src="script.js"></script>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Jahid Hasan</p>
+    </footer>
+
 </body>
 </html>

@@ -1,115 +1,73 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Jahid Hasan is a Purdue Ph.D. candidate building reliable, fair, and adaptive data-centric AI systems.">
-  <title>Jahid Hasan | Data-Centric AI Researcher</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jahid Hasan - Ph.D. Student</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
-  <header class="site-header">
-    <a class="brand" href="index.html">JH<span>.</span></a>
-    <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
-    <nav id="site-nav" aria-label="Primary navigation">
-      <a class="active" href="index.html">About</a>
-      <a href="experience.html">Experience</a>
-      <a href="projects.html">Research</a>
-      <a href="education.html">Education</a>
-      <a href="cv.html">Resume</a>
-      <a href="contact.html">Contact</a>
+
+    <!-- Cover Section with Name & Affiliation -->
+    <div class="cover">
+        <div class="cover-overlay"></div>
+        <div class="cover-text">
+            <h1 class="fade-in">Jahid Hasan</h1>
+            <p class="fade-in delay">Ph.D. Candidate</p>
+            <p class="fade-in delay">Department of Computer and Information Technology</p>
+            <p class="fade-in delay">Purdue University, West Lafayette, USA</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">About</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="cv.html">CV</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
     </nav>
-  </header>
 
-  <main>
-    <section class="hero">
-      <div class="hero-copy">
-        <p class="eyebrow">Ph.D. candidate · Purdue University</p>
-        <h1>Building AI systems that stay <em>reliable</em> beyond the lab.</h1>
-        <p class="hero-lede">I’m Jahid Hasan, a data-centric AI researcher working at the intersection of machine learning, database systems, and agentic AI. I build practical systems for data discovery, pipeline debugging, fairness, and robustness under real-world change.</p>
-        <div class="hero-actions">
-          <a class="button primary" href="projects.html">Explore my research</a>
-          <a class="button secondary" href="Jahid_resume_remote%20(8).pdf" target="_blank">View resume ↗</a>
+    <!-- About Section -->
+    <section class="about-container">
+        <div class="about-image">
+            <img src="photo.jpeg" alt="Jahid Hasan">
         </div>
-        <div class="social-row" aria-label="Profiles">
-          <a href="https://scholar.google.com/citations?user=TG99Bs8AAAAJ&hl=en" target="_blank" rel="noreferrer">Google Scholar</a>
-          <a href="https://github.com/jahid674" target="_blank" rel="noreferrer">GitHub</a>
-          <a href="https://www.linkedin.com/in/jahid-impo/" target="_blank" rel="noreferrer">LinkedIn</a>
+        <div class="about-text">
+            <p>
+                I’m Jahid Hasan, a Ph.D. researcher at Purdue University working on building reliable, fair, and trustworthy machine learning systems that actually hold up in real-world deployment. I work with the Responsible Data Science Lab, where my focus is on how data quality, pipeline design, and evaluation choices determine whether an AI system succeeds—or quietly fails—at the deployment phase.
+
+                <br><br>My work primarily addresses a practical problem companies face every day: models often look great during development, but fail after deployment due to changes in the assumptions. Instead of treating this as a model-only issue, I approach AI systems as end-to-end pipelines, where failures often originate upstream in data acquisition, curation, or preprocessing. My research develops concrete ways to diagnose these failures early and fix them through targeted, interpretable interventions—without costly, full-system redesign from scratch.
+
+                <br><br>I’ve built systems that selectively acquire high-impact data to improve fairness and accuracy, identify fragile pipeline components under data drift, and automatically suggest pipeline repairs that align system behavior with business or user goals. I’m also exploring data-diversification strategies for large language models to improve originality and reduce collapse, as well as retrieval-augmented generation systems grounded in reliable, verifiable sources for trustworthy recommendations.
+                
+                <br><br>I've been under the supervision of the esteemed <a href="https://romilapradhan.github.io/romila/" target="_blank" style="color: #1E90FF; text-decoration: none;">Dr. Romila Pradhan</a> in several <a <href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2237149" target="_blank" style="color: #1E90FF; text-decoration: none;">NSF</a> and <a <href="https://casmi.northwestern.edu/research/projects/data-biases.html" target="_blank" style="color: #1E90FF; text-decoration: none;">CASMI</a> granted projects.  In parallel, I collaborate with the Purdue HCI Research Lab on applied, human-centered projects, including an IRB-approved study that uses motion prediction to reduce collision risk while engaging with VR headset and smart eyewear.
+
+                <br><br>I’m most excited by environments where research meets production—where ideas are tested against messy data, real users, and real constraints. I enjoy working across disciplines and teams to turn responsible AI principles into systems that are practical, measurable, and scalable
+
+                <br><br> Feel free to explore, and don’t hesitate to reach out for collaborations, questions, or discussions!
+            </p>
+            
+            <a href="education.html" class="btn">View My Education</a>
         </div>
-      </div>
-      <div class="portrait-wrap">
-        <div class="portrait-accent"></div>
-        <img src="photo.jpeg" alt="Portrait of Jahid Hasan">
-        <div class="availability">Lafayette, Indiana</div>
-      </div>
     </section>
 
-    <section class="research-focus section-shell">
-      <div class="section-heading">
-        <p class="eyebrow">Research focus</p>
-        <h2>Intelligent infrastructure for better data science</h2>
-      </div>
-      <div class="focus-grid">
-        <article class="focus-card">
-          <span>01</span>
-          <h3>Pipeline intelligence</h3>
-          <p>Agentic and causal systems that diagnose failures, coordinate repairs, and improve end-to-end pipeline behavior.</p>
-        </article>
-        <article class="focus-card">
-          <span>02</span>
-          <h3>Data-centric learning</h3>
-          <p>Selective data acquisition and valuation methods that improve accuracy, fairness, and training efficiency.</p>
-        </article>
-        <article class="focus-card">
-          <span>03</span>
-          <h3>Robust deployment</h3>
-          <p>Methods that explain and mitigate performance degradation under distribution shifts and changing conditions.</p>
-        </article>
-      </div>
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:hasan89@purdue.edu">hasan89@purdue.edu</a></p>
+        <p>GitHub: <a href="https://github.com/jahid674" target="_blank">github.com/jahid674</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/jahid-impo/" target="_blank">LinkedIn Profile</a></p>
     </section>
 
-    <section class="featured section-shell">
-      <div class="section-heading split">
-        <div>
-          <p class="eyebrow">Selected work</p>
-          <h2>Research with measurable impact</h2>
-        </div>
-        <a class="text-link" href="projects.html">View all research →</a>
-      </div>
-      <div class="featured-list">
-        <a class="featured-item" href="projects.html#pipelens">
-          <span class="venue">VLDB 2026</span>
-          <div><h3>PipeLens</h3><p>Interpretable interventions for malfunctioning data science pipelines.</p></div>
-          <strong>5–40% improvement</strong>
-        </a>
-        <a class="featured-item" href="projects.html#datasift">
-          <span class="venue">EDBT 2026</span>
-          <div><h3>DataSift</h3><p>Adaptive acquisition of high-value data for fair, accurate models.</p></div>
-          <strong>30–60% improvement</strong>
-        </a>
-        <a class="featured-item" href="projects.html#sentinel">
-          <span class="venue">ICDE 2026</span>
-          <div><h3>Sentinel</h3><p>Pipeline robustness analysis under deployment-time distribution shifts.</p></div>
-          <strong>Targeted repair</strong>
-        </a>
-      </div>
-    </section>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Jahid Hasan</p>
+    </footer>
 
-    <section class="collaboration section-shell">
-      <p class="eyebrow">Collaboration</p>
-      <h2>Research shaped across disciplines and institutions.</h2>
-      <p>At Purdue’s Responsible Data Science Lab, advised by <a href="https://romilapradhan.github.io/romila/" target="_blank" rel="noreferrer">Dr. Romila Pradhan</a>, I contribute to NSF- and CASMI-funded research and collaborate with researchers at AT&amp;T Research, Cornell University, Université Paris Cité, and Purdue’s Virtual Reality Lab.</p>
-      <a class="button primary" href="mailto:hasan89@purdue.edu">Start a conversation</a>
-    </section>
-  </main>
-
-  <footer>
-    <p>© <span data-year></span> Jahid Hasan</p>
-    <p>Data-centric AI · Fairness · Reliability</p>
-  </footer>
-  <script src="script.js"></script>
 </body>
 </html>
