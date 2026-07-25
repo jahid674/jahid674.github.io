@@ -13,6 +13,7 @@
         <ul>
             <li><a href="index.html">About</a></li>
             <li><a href="education.html">Education</a></li>
+            <li><a href="experience.html">Experience</a></li>
             <li><a href="projects.html">Projects</a></li>
             <li><a href="cv.html">CV</a></li>
             <li><a href="contact.html">Contact</a></li>
@@ -21,21 +22,29 @@
 
     <!-- Projects Section -->
     <section>
-        <h1>Projects Completed So Far...</h1>
+        <h1>Research Projects</h1>
 
         <ul>
             <li>
-                <strong>PipeLens: Identifying Interventions for Optimizing Data Science Pipelines</strong>
-                <br> 
-                <srtong>Submitted</strong> <em>@ International Conference on Very Large Data Bases (VLDB) 2026</em>
-                
+                <strong>Agentic AI for Data Science Pipeline Debugging</strong>
+                <br><strong>Ongoing research</strong>
                 <br><br>
-                Highlights of this work:
                 <ul>
-                    <li>PipeLens treats the entire pipeline—data cleaning, transformations, feature engineering, and models—as the object of diagnosis and repair.</li>
-                    <li>Instead of guessing or correlating failures, PipeLens applies causally verified interventions (parameter changes, module insertion, deletion, or reordering) to identify true root causes.</li>
-                    <li>Uses historical pipeline executions to learn a proxy utility model, guiding automatic repairs toward changes that are most likely to improve performance.</li>
-                    <li>Automatically reasons over dataset properties to align failing data with previously successful distributions.</li>
+                    <li>Developing a multi-agent framework that diagnoses and repairs data science pipelines affected by poor data quality, component failures, and suboptimal configurations.</li>
+                    <li>Coordinating stage-level agents so that local diagnoses and repairs improve end-to-end pipeline reliability and performance.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <ul>
+            <li>
+                <strong>PipeLens: Identifying Interventions for Resolving Malfunctioning Data Science Pipelines</strong>
+                <br><strong>To appear</strong> <em>@ Proceedings of the VLDB Endowment / VLDB 2026</em>
+                <br><br>
+                <ul>
+                    <li>Developed a causal debugging framework that identifies targeted interventions across database, machine learning, and retrieval-augmented generation pipelines.</li>
+                    <li>Used data profiles and historical pipeline executions to recommend interpretable repairs, including parameter changes and component insertion, removal, or reordering.</li>
+                    <li>Improved pipeline utility by <strong>5–40%</strong> compared with Learn2Clean and BugDoc.</li>
                 </ul>
             </li>
         </ul>
@@ -43,74 +52,51 @@
         <ul>
             <li>
                 <strong>DataSift: Selective Data Expansion for Model Performance</strong>
-                <br>
-                <strong>Published </strong> <em> @ International Conference on Extended Database Technology (EDBT) 2026</em>
-                <a href="/DataSift_CR.pdf" target="_blank"
-                   style="color: #1E90FF; text-decoration: none;">
-                   [View Paper]
-                </a>
-                <a href="https://youtu.be/rHqfi6IJ0CE"
-                   target="_blank"
-                   style="color:#FF0000; text-decoration:none;">
-                   [<img src="https://img.icons8.com/color/48/youtube-play.png"
-                        alt="YouTube"
-                        style="width:16px; vertical-align:middle; margin-right:4px;">
-                   Watch Video]
-                </a>
-                
+                <br><strong>Published</strong> <em>@ International Conference on Extending Database Technology (EDBT) 2026</em>
+                <a href="DataSift_CR.pdf" target="_blank" style="color: #1E90FF; text-decoration: none;">[View Paper]</a>
+                <a href="https://youtu.be/rHqfi6IJ0CE" target="_blank" style="color:#FF0000; text-decoration:none;">[Watch Video]</a>
                 <br><br>
-                Highlights of this work:
                 <ul>
-                    <li>Developed a novel framework, <strong>DataSift</strong>, to acquire selective data points for fair and accurate ML training</li>
-                    <li>Integrated a Multi-Armed Bandit algorithm into the data acquisition process</li>
-                    <li>Implemented influence functions to improve framework effectiveness and efficiency</li>
-                    <li>Experimental results outperform existing baselines</li>
+                    <li>Designed a reinforcement learning-based system that identifies and acquires high-value training samples through adaptive data valuation.</li>
+                    <li>Combined multi-armed bandit selection with influence-based valuation to improve acquisition efficiency, predictive performance, and fairness.</li>
+                    <li>Achieved <strong>30–60%</strong> improvement over AutoData, SliceTuner, random sampling, and entropy-based selection.</li>
                 </ul>
             </li>
         </ul>
 
-        
-
-        <!-- Project 1 -->
         <ul>
             <li>
-                <strong>Sentinel: Explanations for machine learning pipelines under data drift.</strong>
-                <br>
-                <strong>Published </strong> <em> @ IEEE International Conference on Data Engineering (ICDE) 2026</em>
-                <br>
-                Workshop paper <strong>Published</strong> 
-                <em>@ ACM SIGMOD International Conference on Management of Data 2025</em>
-                
-                <a href="https://dl.acm.org/doi/abs/10.1145/3736733.3736744"
-                   style="color:#1E90FF; text-decoration:none; margin-right:10px;">
-                   [View Paper]
-                </a>
-                
-                <a href="https://www.youtube.com/watch?v=Sqqe0cHV4F8&t=253s"
-                   target="_blank"
-                   style="color:#FF0000; text-decoration:none;">
-                   [<img src="https://img.icons8.com/color/48/youtube-play.png"
-                        alt="YouTube"
-                        style="width:16px; vertical-align:middle; margin-right:4px;">
-                   Watch Video]
-                </a>
-
-                
+                <strong>Sentinel: Evaluating Pipeline Robustness Under Distributional Shifts</strong>
+                <br><strong>Accepted</strong> <em>@ IEEE International Conference on Data Engineering (ICDE) 2026</em>
+                <br>Workshop version <strong>published</strong> <em>@ ACM SIGMOD 2025</em>
+                <a href="https://dl.acm.org/doi/10.1145/3736733.3736744" target="_blank" style="color:#1E90FF; text-decoration:none;">[View Paper]</a>
+                <a href="https://www.youtube.com/watch?v=Sqqe0cHV4F8&t=253s" target="_blank" style="color:#FF0000; text-decoration:none;">[Watch Video]</a>
                 <br><br>
-                Highlights of this work:
                 <ul>
-                    <li>Quantifying and assessing the robustness of data preprocessing pipelines under data shift</li>
-                    <li>Explaining pipeline robustness and model vulnerability for end-users</li>
-                    <li>Estimating performance degradation due to future data shifts</li>
+                    <li>Developed component- and pipeline-level measures that explain how optimized machine learning pipelines degrade under deployment-time distribution shifts.</li>
+                    <li>Enabled teams to identify vulnerable pipeline stages and make targeted reconfigurations without retraining the complete system.</li>
                 </ul>
             </li>
         </ul>
 
-        <!-- Project 2 -->
-       
+        <ul>
+            <li>
+                <strong>FANSHIELD: Predictive Obstacle Assessment for Outdoor Extended Reality</strong>
+                <br><strong>Submitted</strong> <em>@ ACM CHI 2027</em>
+                <br><br>
+                <ul>
+                    <li>Developed an LSTM-based trajectory prediction system using headset, gaze, controller, and smart-eyewear motion signals.</li>
+                    <li>Designed anticipatory safety mechanisms that predict user movement and reduce collision risks in immersive outdoor environments.</li>
+                </ul>
+            </li>
+        </ul>
 
-
-
+        <h1>Applied Projects</h1>
+        <ul>
+            <li><strong>Conversational Shopping Assistant:</strong> Built an end-to-end retrieval-augmented generation pipeline for context-aware product recommendations, with a latency-conscious architecture for scalable real-time responses.</li>
+            <li><strong>In-Sentence Pun Detection:</strong> Used contextual embeddings and linguistic features to detect semantic ambiguity and distinguish multiple word senses. <a href="https://github.com/jahid674/NLT-In-sentence-pun-detection" target="_blank" style="color:#1E90FF; text-decoration:none;">[View Code]</a></li>
+            <li><strong>Machine Learning Bias Mitigation:</strong> Implemented data-transformation techniques for equal-opportunity constraints and evaluated fairness–accuracy trade-offs across datasets and models. <a href="https://github.com/jahid674/ML-Bias-Mitigation-with-Reweighing-Preprocessing" target="_blank" style="color:#1E90FF; text-decoration:none;">[View Code]</a></li>
+        </ul>
     </section>
 
     <!-- Footer -->
