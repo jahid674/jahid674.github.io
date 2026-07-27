@@ -420,26 +420,32 @@ footer {
 }
 
 .research-copy h2 {
-    margin: 0 0 5px;
+    margin: 0 0 8px;
     font-size: clamp(2rem, 3.5vw, 3rem);
     line-height: 1.1;
 }
 
 .research-copy h3 {
-    margin: 25px 0 8px;
+    margin: 18px 0 8px;
     font-size: 1rem;
 }
 
 .project-subtitle {
-    margin-bottom: 22px;
+    margin: 0 0 16px;
     color: #0056d2;
     font-weight: bold;
+    line-height: 1.6;
 }
 
 .project-summary {
+    margin: 0 0 16px;
     color: #303944;
     font-size: 1.02rem;
     line-height: 1.72;
+}
+
+.research-copy > p:not(.project-subtitle):not(.project-summary) {
+    margin: 0 0 16px;
 }
 
 .project-points {
