@@ -65,7 +65,7 @@ a {
 .hero {
     min-height: 90vh;
     position: relative;
-    padding: 5.4rem 5vw 4.4rem;
+    padding: 1.2rem 5vw 4.4rem;
     background: url("cover.jpg") center/cover no-repeat;
     border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
@@ -77,11 +77,10 @@ a {
 }
 
 .main-nav {
-    position: fixed;
-    top: 18px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: min(1120px, 92vw);
+    position: sticky;
+    top: 12px;
+    width: min(1040px, 100%);
+    margin: 0 auto;
     z-index: 20;
     display: flex;
     gap: 1rem;
@@ -146,7 +145,7 @@ a {
     position: relative;
     z-index: 2;
     max-width: 960px;
-    margin: 17vh auto 0;
+    margin: 12vh auto 0;
 }
 
 .eyebrow {
@@ -206,7 +205,7 @@ h1 {
 }
 
 main {
-    width: min(1040px, 92vw);
+    width: min(920px, 92vw);
     margin: 0 auto;
     padding: 3.2rem 0 4.2rem;
 }
@@ -221,7 +220,7 @@ main {
 }
 
 section[id] {
-    scroll-margin-top: 112px;
+    scroll-margin-top: 86px;
 }
 
 .section-title-wrap {
@@ -250,14 +249,15 @@ h2 {
 
 .split-section {
     display: grid;
-    grid-template-columns: minmax(270px, 0.78fr) minmax(0, 1.22fr);
-    gap: clamp(1.4rem, 2.7vw, 2.4rem);
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
     align-items: start;
 }
 
 .about-image-wrap {
-    position: sticky;
-    top: 110px;
+    position: static;
+    max-width: 360px;
+    margin: 0 auto;
 }
 
 .about-image-wrap img {
@@ -278,11 +278,7 @@ h2 {
 }
 
 .experience-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.experience-grid .experience-card:first-child {
-    grid-column: 1 / -1;
+    grid-template-columns: 1fr;
 }
 
 .timeline-item,
@@ -423,10 +419,6 @@ footer {
 }
 
 @media (max-width: 940px) {
-    .hero {
-        padding-top: 1.2rem;
-    }
-
     .project-stack {
         grid-template-columns: 1fr;
     }
@@ -441,13 +433,12 @@ footer {
 
     .about-image-wrap {
         position: static;
+        max-width: none;
+        margin: 0;
     }
 
     .main-nav {
-        position: sticky;
         top: 10px;
-        left: auto;
-        transform: none;
         width: 100%;
         border-radius: 20px;
         flex-wrap: wrap;
@@ -455,10 +446,6 @@ footer {
 
     .experience-grid {
         grid-template-columns: 1fr;
-    }
-
-    .experience-grid .experience-card:first-child {
-        grid-column: auto;
     }
 
     section[id] {
