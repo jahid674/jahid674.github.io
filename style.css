@@ -11,7 +11,7 @@ body {
 .cover {
     width: 100%;
     height: 230px; /* Reduced height for a compact look */
-    background: url('https://raw.githubusercontent.com/jahid674/jahid674.github.io/eca0a41b6fd5123d5b0fd9b067347457b09ef651/cover.jpeg') no-repeat center center/cover;
+    background: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
