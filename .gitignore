@@ -1,0 +1,12 @@
+# Keep personal papers and images out of the public repository.
+*.pdf
+*.heic
+*.jpeg
+*.jpg
+*.png
+*.webp
+
+# Preserve the site source itself.
+!*.html
+!*.css
+!*.js
