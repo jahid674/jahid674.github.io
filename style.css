@@ -166,6 +166,48 @@ nav ul li a:hover {
     color: #000000;
 }
 
+/* Featured Project Card */
+.featured-project-card {
+    margin: 24px 0 16px;
+    padding: 18px 20px;
+    border: 1px solid #d8dce3;
+    border-radius: 10px;
+    background: #f8fbff;
+}
+
+.featured-project-kicker {
+    margin: 0 0 6px;
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #1e5fbf;
+}
+
+.featured-project-card h3 {
+    margin: 0 0 8px;
+    font-size: 1.2rem;
+}
+
+.featured-project-card p {
+    margin: 0 0 12px;
+    line-height: 1.5;
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 14px;
+    border-radius: 6px;
+    background: #1e5fbf;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.btn:hover {
+    background: #174794;
+}
+
 /* Contact Section */
 #contact {
     max-width: 800px;
