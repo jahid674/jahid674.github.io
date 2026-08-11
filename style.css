@@ -607,8 +607,8 @@ footer {
 
 .education-card {
     display: grid;
-    grid-template-columns: 116px minmax(0, 1fr);
-    gap: 22px;
+    grid-template-columns: 180px minmax(0, 1fr);
+    gap: 28px;
     padding: 20px;
     border: 1px solid #dce3ec;
     border-radius: 14px;
@@ -617,15 +617,15 @@ footer {
 }
 
 .education-logo-wrap {
-    width: 116px;
-    height: 116px;
+    width: 180px;
+    height: 110px;
     border-radius: 12px;
     border: 1px solid #e5ebf2;
     background: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 14px;
+    padding: 12px;
 }
 
 .education-logo {
@@ -636,7 +636,7 @@ footer {
 
 .education-card-body {
     align-self: center;
-    padding-left: 8px;
+    padding-left: 18px;
 }
 
 .education-degree {
