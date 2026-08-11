@@ -10,4 +10,5 @@
 !*.html
 !*.css
 !*.js
+!cv.pdf
 !paper-assets/*.png
