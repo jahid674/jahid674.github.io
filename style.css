@@ -264,17 +264,6 @@ footer {
     margin: 24px 0 48px;
 }
 
-.cv-fallback {
-    margin: 0;
-    padding: 24px;
-    text-align: center;
-}
-
-.cv-fallback a {
-    color: #0056d2;
-    font-weight: 700;
-}
-
 /* Responsive CV Display */
 @media screen and (max-width: 768px) {
     .cv-frame {
