@@ -22,15 +22,20 @@
 
     <!-- CV Section -->
     <section id="cv">
-        <h2>Jahid Hasan's CV</h2>
-        <p>You can view or download my CV below:</p>
-        
-        <div class="cv-container">
-            <iframe src="https://raw.githubusercontent.com/jahid674/jahid674.github.io/eca0a41b6fd5123d5b0fd9b067347457b09ef651/Jahid_resume_remote%20(8).pdf" class="cv-frame" title="Jahid Hasan's current CV"></iframe>
+        <div class="cv-intro">
+            <h2>Jahid Hasan's CV</h2>
+            <p>You can read my CV below and download a copy if needed.</p>
         </div>
 
-        <br>
-        <a href="https://raw.githubusercontent.com/jahid674/jahid674.github.io/eca0a41b6fd5123d5b0fd9b067347457b09ef651/Jahid_resume_remote%20(8).pdf" download class="btn">Download CV</a>
+        <div class="cv-container">
+            <object data="cv.pdf#view=FitH" type="application/pdf" class="cv-frame" title="Jahid Hasan's current CV">
+                <p class="cv-fallback">Your browser could not display the PDF inline. You can still <a href="cv.pdf" download>download the CV here</a>.</p>
+            </object>
+        </div>
+
+        <div class="cv-actions">
+            <a href="cv.pdf" download class="btn">Download CV</a>
+        </div>
     </section>
 
     <!-- Footer -->
