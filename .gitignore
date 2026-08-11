@@ -10,3 +10,4 @@
 !*.html
 !*.css
 !*.js
+!paper-assets/*.png
