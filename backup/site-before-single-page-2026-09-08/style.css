@@ -1,23 +1,10 @@
 /* General Styles */
-html {
-    scroll-behavior: smooth;
-}
-
 body {
     font-family: "Courier New", monospace;
     background-color: #ffffff;
     color: #000000;
     margin: 0;
     padding: 0;
-}
-
-#about,
-#education,
-#experience,
-#projects,
-#cv,
-#contact {
-    scroll-margin-top: 78px;
 }
 
 /* Cover Section */
@@ -730,92 +717,6 @@ footer {
     }
 
     .education-card h2 {
-        font-size: 1.34rem;
-    }
-}
-
-/* Experience Section */
-.experience-page {
-    max-width: 1080px;
-    margin: 0 auto;
-    padding: 10px 22px 88px;
-}
-
-.experience-intro {
-    max-width: 760px;
-    margin: 0 auto 38px;
-    text-align: center;
-}
-
-.experience-kicker {
-    margin: 0 0 8px;
-    color: #0b63ce;
-    font-size: 0.85rem;
-    font-weight: 700;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-}
-
-.experience-intro h1 {
-    margin: 0;
-    font-size: clamp(2rem, 4.8vw, 3.2rem);
-    line-height: 1.1;
-}
-
-.experience-list {
-    display: grid;
-    gap: 20px;
-}
-
-.experience-card {
-    padding: 24px 26px;
-    border: 1px solid #dce3ec;
-    border-radius: 14px;
-    background: linear-gradient(145deg, #ffffff, #f7fbff);
-    box-shadow: 0 14px 30px rgba(24, 39, 75, 0.08);
-}
-
-.experience-role {
-    margin: 0 0 6px;
-    color: #0b63ce;
-    font-size: 0.86rem;
-    font-weight: 700;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-}
-
-.experience-card h2 {
-    margin: 0;
-    font-size: 1.5rem;
-}
-
-.experience-meta {
-    margin: 7px 0 14px;
-    color: #4b5563;
-    font-size: 0.98rem;
-}
-
-.experience-card ul {
-    margin: 0;
-    padding-left: 22px;
-    line-height: 1.65;
-    color: #374151;
-}
-
-.experience-card li + li {
-    margin-top: 8px;
-}
-
-@media screen and (max-width: 800px) {
-    .experience-page {
-        padding: 0 16px 66px;
-    }
-
-    .experience-card {
-        padding: 22px 18px;
-    }
-
-    .experience-card h2 {
         font-size: 1.34rem;
     }
 }
