@@ -24,6 +24,7 @@ body {
 }
 
 #about,
+#news,
 #education,
 #experience,
 #projects,
@@ -152,6 +153,7 @@ nav ul li a.is-active {
 }
 
 .about-container,
+.news-page,
 .education-page,
 .experience-page,
 .research-page,
@@ -216,6 +218,66 @@ nav ul li a.is-active {
 #cv,
 #contact {
     padding: 26px 0 10px;
+}
+
+.news-page {
+    padding: 24px 0 8px;
+}
+
+.news-intro {
+    margin: 0 0 14px;
+}
+
+.news-kicker {
+    margin: 0 0 8px;
+    color: var(--accent);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.news-intro h1 {
+    margin: 0;
+    font-family: "Source Serif 4", serif;
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+.news-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: 1px solid var(--line);
+    background: var(--paper-strong);
+    box-shadow: var(--shadow);
+}
+
+.news-list li {
+    display: grid;
+    grid-template-columns: 170px minmax(0, 1fr);
+    gap: 16px;
+    padding: 11px 14px;
+    border-bottom: 1px solid var(--line);
+}
+
+.news-list li:last-child {
+    border-bottom: none;
+}
+
+.news-date {
+    color: var(--accent);
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.news-event {
+    color: var(--ink-soft);
+    font-size: 0.95rem;
+    line-height: 1.5;
 }
 
 .education-intro,
@@ -619,6 +681,7 @@ footer {
     }
 
     .about-container,
+    .news-page,
     .education-page,
     .experience-page,
     .research-page,
@@ -631,5 +694,10 @@ footer {
 
     .cv-frame {
         min-height: 500px;
+    }
+
+    .news-list li {
+        grid-template-columns: 1fr;
+        gap: 4px;
     }
 }
