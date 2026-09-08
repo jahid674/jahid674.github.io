@@ -143,18 +143,27 @@ nav ul li a {
     color: #000000;
     text-decoration: none;
     font-size: 1.1rem;
-    padding: 0.2rem 0.25rem;
+    padding: 0.32rem 0.55rem;
+    border-radius: 999px;
+    transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    background: #e8f1ff;
+    color: #004a9f;
+}
+
+nav ul li a.is-active {
+    background: #0056d2;
+    color: #ffffff;
 }
 
 /* About Page Layout (Desktop-Friendly) */
 .about-container {
     display: flex;
     max-width: 1000px;
-    margin: 50px auto;
+    margin: 38px auto 30px;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -196,7 +205,7 @@ nav ul li a:hover {
 /* Contact Section */
 #contact {
     max-width: 800px;
-    margin: 50px auto;
+    margin: 30px auto 42px;
     text-align: center;
     background: #ffffff;
     padding: 20px;
@@ -237,7 +246,7 @@ footer {
 /* CV Section Styling */
 .cv-intro {
     max-width: 760px;
-    margin: 48px auto 20px;
+    margin: 22px auto 18px;
     padding: 0 20px;
     text-align: center;
 }
@@ -274,7 +283,7 @@ footer {
 .cv-actions {
     display: flex;
     justify-content: center;
-    margin: 24px 0 48px;
+    margin: 20px 0 34px;
 }
 
 /* Responsive CV Display */
@@ -327,12 +336,12 @@ footer {
 .research-page {
     max-width: 1180px;
     margin: 0 auto;
-    padding: 70px 28px 110px;
+    padding: 42px 28px 54px;
 }
 
 .research-intro {
     max-width: 850px;
-    margin: 0 auto 72px;
+    margin: 0 auto 46px;
     text-align: center;
 }
 
@@ -361,8 +370,8 @@ footer {
     grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
     gap: 46px;
     align-items: start;
-    margin-bottom: 42px;
-    padding: 46px;
+    margin-bottom: 28px;
+    padding: 38px;
     background: #ffffff;
     border: 1px solid #dddddd;
     border-radius: 14px;
@@ -580,16 +589,17 @@ footer {
 
 @media screen and (max-width: 520px) {
     .research-page {
-        padding: 48px 16px 80px;
+        padding: 34px 16px 42px;
     }
 
     .research-intro {
-        margin-bottom: 45px;
+        margin-bottom: 32px;
     }
 
     .research-project {
         padding: 22px;
         border-radius: 10px;
+        margin-bottom: 20px;
     }
 
     .paper-visual {
@@ -609,13 +619,13 @@ footer {
 .education-page {
     max-width: 1080px;
     margin: 0 auto;
-    padding: 58px 22px 88px;
+    padding: 22px 22px 54px;
 }
 
 .education-intro {
     text-align: center;
     max-width: 760px;
-    margin: 0 auto 38px;
+    margin: 0 auto 26px;
 }
 
 .education-kicker {
@@ -715,7 +725,7 @@ footer {
 
 @media screen and (max-width: 800px) {
     .education-page {
-        padding: 42px 16px 66px;
+        padding: 18px 16px 42px;
     }
 
     .education-card {
@@ -738,12 +748,12 @@ footer {
 .experience-page {
     max-width: 1080px;
     margin: 0 auto;
-    padding: 10px 22px 88px;
+    padding: 0 22px 54px;
 }
 
 .experience-intro {
     max-width: 760px;
-    margin: 0 auto 38px;
+    margin: 0 auto 26px;
     text-align: center;
 }
 
@@ -808,7 +818,7 @@ footer {
 
 @media screen and (max-width: 800px) {
     .experience-page {
-        padding: 0 16px 66px;
+        padding: 0 16px 42px;
     }
 
     .experience-card {
