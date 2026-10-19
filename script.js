@@ -1,4 +1,26 @@
 document.addEventListener("DOMContentLoaded", function () {
+    const newsList = document.getElementById("news-list");
+    const newsToggle = document.querySelector(".news-toggle");
+
+    if (newsList && newsToggle) {
+        const olderNews = Array.from(newsList.children).slice(6);
+
+        if (olderNews.length > 0) {
+            olderNews.forEach(function (item) {
+                item.hidden = true;
+            });
+            newsToggle.hidden = false;
+            newsToggle.addEventListener("click", function () {
+                const expanded = newsToggle.getAttribute("aria-expanded") !== "true";
+                olderNews.forEach(function (item) {
+                    item.hidden = !expanded;
+                });
+                newsToggle.setAttribute("aria-expanded", String(expanded));
+                newsToggle.textContent = expanded ? "See less" : "See more";
+            });
+        }
+    }
+
     const navLinks = Array.from(document.querySelectorAll('nav a[href^="#"]'));
     const sections = navLinks
         .map(function (link) {

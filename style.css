@@ -266,6 +266,21 @@ nav ul li a.is-active {
     border-bottom: none;
 }
 
+.news-list li[hidden],
+.news-toggle[hidden] {
+    display: none;
+}
+
+.news-toggle {
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.news-toggle:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+}
+
 .news-date {
     color: var(--accent);
     font-size: 0.82rem;
