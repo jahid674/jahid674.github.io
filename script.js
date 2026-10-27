@@ -1,23 +1,26 @@
 document.addEventListener("DOMContentLoaded", function () {
     const newsList = document.getElementById("news-list");
-    const newsToggle = document.querySelector(".news-toggle");
 
-    if (newsList && newsToggle) {
-        const olderNews = Array.from(newsList.children).slice(6);
+    if (newsList) {
+        const recentNews = Array.from(newsList.children).slice(0, 6);
 
-        if (olderNews.length > 0) {
-            olderNews.forEach(function (item) {
-                item.hidden = true;
+        function sizeNewsList() {
+            const height = recentNews.reduce(function (total, item) {
+                return total + item.getBoundingClientRect().height;
+            }, 0);
+            if (height > 0) {
+                newsList.style.setProperty("--news-visible-height", Math.ceil(height) + "px");
+            }
+        }
+
+        sizeNewsList();
+        if (typeof ResizeObserver !== "undefined") {
+            const newsObserver = new ResizeObserver(sizeNewsList);
+            recentNews.forEach(function (item) {
+                newsObserver.observe(item);
             });
-            newsToggle.hidden = false;
-            newsToggle.addEventListener("click", function () {
-                const expanded = newsToggle.getAttribute("aria-expanded") !== "true";
-                olderNews.forEach(function (item) {
-                    item.hidden = !expanded;
-                });
-                newsToggle.setAttribute("aria-expanded", String(expanded));
-                newsToggle.textContent = expanded ? "See less" : "See more";
-            });
+        } else {
+            window.addEventListener("resize", sizeNewsList);
         }
     }
 

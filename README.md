@@ -1,6 +1,6 @@
 # jahid674.github.io
 
-News updates: add new entries at the top of the news list in `index.html` and never delete older entries. The site initially shows the latest six updates; “See more” reveals the full archive.
+News updates: add new entries at the top of the news list in `index.html` and never delete older entries. Keep all updates in a list that scrolls up and down, with room for the latest six entries on larger screens and a height that fits smaller screens. Do not use a “See more” button.
 
 Keep the ongoing agentic AI project description high level, focused on debugging failures in agentic trajectories. Do not disclose its methods or key ideas before publication, including details about data quality or fitness.
 

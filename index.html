@@ -61,9 +61,10 @@
         <div class="news-intro">
             <p class="news-kicker">Recent Updates</p>
             <h1>News</h1>
+            <p class="news-scroll-hint" id="news-scroll-hint">Scroll up or down to read all updates.</p>
         </div>
-        <!-- Add new entries at the top and preserve all older news. The script shows six initially. -->
-        <ul class="news-list" id="news-list">
+        <!-- Add new entries at the top and preserve all older news in this scrollable list. -->
+        <ul class="news-list" id="news-list" tabindex="0" aria-label="News updates, newest first" aria-describedby="news-scroll-hint">
             <li><span class="news-date">October 2026</span><span class="news-event">Gave a research talk titled "Data-Centric ML Pipeline Management: From Failure Diagnosis to Adaptive Intervention" at the Applied AI Research Center (AARC), Purdue University.</span></li>
             <li><span class="news-date">September 2026</span><span class="news-event">Presented our paper "PipeLens: Identifying interventions for resolving malfunctioning data science pipelines" at VLDB 2026, Boston.</span></li>
             <li><span class="news-date">May 2026</span><span class="news-event">Presented our paper "Sentinel: Evaluating pipeline robustness under distributional shifts" and gave a Sentinel demo and lightning talk at ICDE 2026, Montreal, Canada.</span></li>
@@ -72,7 +73,6 @@
             <li><span class="news-date">July 2025</span><span class="news-event">Attended EDBT Summer School in Nicosia, Cyprus, and received the US EDBT Microsoft Fellowship.</span></li>
             <li><span class="news-date">June 2025</span><span class="news-event">Presented our paper "Explanations for Machine Learning Pipelines under Data Drif" at SIGMOD 2025, Berlin, Germany.</span></li>
         </ul>
-        <button class="btn news-toggle" type="button" aria-expanded="false" aria-controls="news-list" hidden>See more</button>
     </section>
 
     <section class="education-page" id="education">
