@@ -14,6 +14,13 @@ and the existing applied-research résumé. Keep future appointments and submitt
 papers clearly labeled. Update the downloadable CV by replacing `resume.pdf` and
 changing its cache version in the page links.
 
+Every research project has a publication-stage badge: Published, Submitted, or
+Ongoing. Category filters summarize the visible projects by stage. Keep student
+research descriptions and collaborators in Work; Mentoring lists student profiles,
+affiliations, program context, and mentorship dates. The ongoing agentic debugging
+project is a collaboration with AT&T Research and Cornell University. Keep the
+multi-agent benchmarking project high level until publication as well.
+
 ## Previous version and restoration
 
 The complete version from before the portfolio redesign is saved in

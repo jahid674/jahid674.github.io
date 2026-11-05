@@ -32,17 +32,28 @@ document.addEventListener("DOMContentLoaded", function () {
     const filterStatus = document.querySelector(".filter-status");
     function applyFilter(category) {
         let count = 0;
+        const statuses = { published: 0, submitted: 0, ongoing: 0 };
         projects.forEach(function (project) {
             project.hidden = category !== "all" && project.dataset.category !== category;
-            if (!project.hidden) count++;
+            if (!project.hidden) {
+                count++;
+                if (project.dataset.status in statuses) statuses[project.dataset.status]++;
+            }
         });
         filterButtons.forEach(function (button) {
             button.setAttribute("aria-pressed", String(button.dataset.filter === category));
         });
-        if (filterStatus) filterStatus.textContent = count + (count === 1 ? " project" : " projects");
+        if (filterStatus) {
+            const summary = [count + (count === 1 ? " project" : " projects")];
+            Object.keys(statuses).forEach(function (status) {
+                if (statuses[status]) summary.push(statuses[status] + " " + status);
+            });
+            filterStatus.textContent = summary.join(" · ");
+        }
     }
     if (toolbar && projects.length) {
         toolbar.hidden = false;
+        applyFilter("all");
         filterButtons.forEach(function (button) {
             button.addEventListener("click", function () {
                 applyFilter(button.dataset.filter);

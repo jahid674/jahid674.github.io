@@ -12,8 +12,8 @@
     <meta property="og:image" content="https://raw.githubusercontent.com/jahid674/jahid674.github.io/eca0a41b6fd5123d5b0fd9b067347457b09ef651/photo.jpeg">
     <title>Jahid Hasan | Research &amp; Portfolio</title>
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css?v=20261105-2">
+    <script src="script.js?v=20261105-2" defer></script>
 </head>
 <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
@@ -34,6 +34,10 @@
 
     <main id="main-content">
         <section class="hero page-width" id="about" aria-labelledby="intro-title">
+            <figure class="hero-portrait">
+                <img src="https://raw.githubusercontent.com/jahid674/jahid674.github.io/eca0a41b6fd5123d5b0fd9b067347457b09ef651/photo.jpeg" alt="Jahid Hasan" width="724" height="1086" fetchpriority="high">
+                <figcaption><span>Researcher. Builder. Mentor.</span><span aria-hidden="true">↗</span></figcaption>
+            </figure>
             <div class="hero-copy">
                 <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Ph.D. candidate · Purdue University</p>
                 <h1 id="intro-title">Jahid Hasan<span class="name-period">.</span></h1>
@@ -45,10 +49,6 @@
                 </div>
                 <p class="hero-affiliation">Responsible Data Science Lab · West Lafayette, Indiana<br>Advised by <a href="https://romilapradhan.github.io/romila/" target="_blank" rel="noopener noreferrer">Dr. Romila Pradhan</a></p>
             </div>
-            <figure class="hero-portrait">
-                <img src="https://raw.githubusercontent.com/jahid674/jahid674.github.io/eca0a41b6fd5123d5b0fd9b067347457b09ef651/photo.jpeg" alt="Jahid Hasan" width="724" height="1086" fetchpriority="high">
-                <figcaption><span>Researcher. Builder. Mentor.</span><span aria-hidden="true">↗</span></figcaption>
-            </figure>
             <div class="research-interests" aria-label="Research interests">
                 <span>Data-centric AI</span><span>ML systems</span><span>Agentic AI</span><span>Data management</span>
             </div>
@@ -67,19 +67,21 @@
                     <button type="button" data-filter="agentic" aria-pressed="false">Agentic AI</button>
                     <button type="button" data-filter="xr" aria-pressed="false">Extended reality</button>
                 </div>
-                <p class="filter-status" role="status" aria-live="polite" aria-atomic="true">5 projects</p>
+                <p class="filter-status" role="status" aria-live="polite" aria-atomic="true">7 projects · 3 published · 2 submitted · 2 ongoing</p>
             </div>
             <div class="featured-work">
-        <article data-category="reliability" class="research-project" id="pipelens">
+        <article data-category="reliability" class="research-project" id="pipelens" data-status="published">
             <div class="research-copy">
                 <div class="project-meta">
+                    <span class="project-status project-status--published">Published</span>
                     <a class="conference-link" href="https://doi.org/10.14778/3836663.3836682" target="_blank" rel="noopener noreferrer">PVLDB 19(11) ↗</a>
-                    <span>Published</span>
+
                 </div>
                 <h3>PipeLens</h3>
                 <p class="project-authors">Jahid Hasan, Stanley Jiang, Tejendra Singh, Sainyam Galhotra, Romila Pradhan &amp; Divesh Srivastava</p>
                 <p class="project-subtitle">Identifying interventions for resolving malfunctioning data science pipelines</p>
                 <p class="project-summary">Diagnoses malfunctioning data science pipelines and identifies targeted interventions to restore performance.</p>
+                <p class="project-collaboration"><strong>Collaboration</strong> AT&amp;T Research · Cornell University</p>
                 <p class="result-note"><strong>5–40% performance improvement</strong> over Learn2Clean and BugDoc across evaluated tasks.</p>
                 <div class="project-actions">
                     <a href="https://cdn.jsdelivr.net/gh/jahid674/jahid674.github.io@27156a9/My%20paper/PipeLens_VLDB_2026.pdf" target="_blank" rel="noopener noreferrer">Read the paper</a>
@@ -120,11 +122,12 @@
                 </div>
             </details>
         </article>
-        <article data-category="data" class="research-project" id="datasift">
+        <article data-category="data" class="research-project" id="datasift" data-status="published">
             <div class="research-copy">
                 <div class="project-meta">
+                    <span class="project-status project-status--published">Published</span>
                     <a class="conference-link" href="https://edbticdt2026.github.io/" target="_blank" rel="noopener noreferrer">EDBT 2026 ↗</a>
-                    <span>Published</span>
+
                 </div>
                 <h3>DataSift</h3>
                 <p class="project-authors">Jahid Hasan &amp; Romila Pradhan</p>
@@ -170,11 +173,12 @@
                 </div>
             </details>
         </article>
-        <article data-category="reliability" class="research-project" id="sentinel">
+        <article data-category="reliability" class="research-project" id="sentinel" data-status="published">
             <div class="research-copy">
                 <div class="project-meta">
+                    <span class="project-status project-status--published">Published</span>
                     <a class="conference-link" href="https://icde2026.github.io/" target="_blank" rel="noopener noreferrer">IEEE ICDE 2026 ↗</a>
-                    <span>Presented</span>
+
                 </div>
                 <h3>Sentinel</h3>
                 <p class="project-authors">Jahid Hasan, Jingya Wang &amp; Romila Pradhan</p>
@@ -222,20 +226,47 @@
         </article>
             </div>
             <div class="supporting-work">
-        <article data-category="agentic" class="research-project research-project--compact" id="agentic-ai">
+        <article data-category="agentic" class="research-project research-project--compact" id="agentic-ai" data-status="ongoing">
             <div class="research-copy">
-                <div class="project-meta"><span>Ongoing</span><span>Agentic AI</span></div>
+                <div class="project-meta">
+                    <span class="project-status project-status--ongoing">Ongoing</span><span>Agentic AI</span></div>
                 <h3>Debugging Failures in Agentic Trajectories</h3>
                 <p class="project-summary">
                     This ongoing research focuses on debugging failures in agentic trajectories to improve
                     the reliability of agentic AI systems.
                 </p>
+                <p class="project-collaboration"><strong>Collaboration</strong> AT&amp;T Research · Cornell University</p>
             </div>
         </article>
-        <article data-category="xr" class="research-project research-project--compact" id="fanshield">
+        <article data-category="agentic" data-status="ongoing" class="research-project research-project--compact" id="multi-agent-benchmarking">
             <div class="research-copy">
                 <div class="project-meta">
-                    <a class="conference-link" href="https://chi2027.acm.org/" target="_blank" rel="noopener noreferrer">Submitted · ACM CHI 2027 ↗</a>
+                    <span class="project-status project-status--ongoing">Ongoing</span>
+                    <span>NSF CISE REU · 2026–2027</span>
+                </div>
+                <h3>Benchmarking Multi-Agent Systems</h3>
+                <p class="project-summary">Ongoing research benchmarking multi-agent systems to study their reliability.</p>
+                <p class="project-collaboration"><strong>Research with</strong> Ritwik Jayaraman · Computer Science, Purdue University</p>
+            </div>
+        </article>
+        <article data-category="reliability" data-status="submitted" class="research-project research-project--compact" id="refair">
+            <div class="research-copy">
+                <div class="project-meta">
+                    <span class="project-status project-status--submitted">Submitted</span>
+                    <span>VLDB 2027 · Under review</span>
+                </div>
+                <h3>ReFair</h3>
+                <p class="project-subtitle">Regional performance diagnosis and selective model adaptation under data drift</p>
+                <p class="project-summary">Studies regional performance changes under data drift and selective adaptation of machine learning models.</p>
+                <p class="project-collaboration"><strong>Research with</strong> Wail Ouaret · National School of Artificial Intelligence, Algeria</p>
+                <p class="project-collaboration"><strong>Collaboration</strong> Université Paris Cité</p>
+            </div>
+        </article>
+        <article data-category="xr" class="research-project research-project--compact" id="fanshield" data-status="submitted">
+            <div class="research-copy">
+                <div class="project-meta">
+                    <span class="project-status project-status--submitted">Submitted</span>
+                    <a class="conference-link" href="https://chi2027.acm.org/" target="_blank" rel="noopener noreferrer">ACM CHI 2027 ↗</a>
                     <span>Extended Reality</span>
                 </div>
                 <h3>FANSHIELD</h3>
@@ -244,6 +275,7 @@
                     Immersive headsets can reduce awareness of nearby obstacles, especially while a user is moving
                     outdoors. FANSHIELD shifts safety from reacting to a collision risk toward anticipating it.
                 </p>
+                <p class="project-collaboration"><strong>Collaboration</strong> Purdue Virtual Reality Lab</p>
             </div>
             <details class="project-details">
                 <summary>Project details</summary>
@@ -270,10 +302,10 @@
                     <p class="section-intro">I work with researchers across industry and academia, connecting data management, responsible AI, and human-centered systems.</p>
                 </div>
                 <div class="collaboration-grid">
-                    <article class="collaboration-item"><p class="item-label">Industry × academia</p><h3>AT&amp;T Research &amp;<br>Cornell University</h3><p>Collaborative work on data science pipeline diagnosis and targeted interventions, including PipeLens.</p><a class="text-link" href="#pipelens">Explore PipeLens <span aria-hidden="true">↗</span></a></article>
-                    <article class="collaboration-item"><p class="item-label">International research</p><h3>Université Paris Cité</h3><p>Research collaboration and student mentorship on regional performance diagnosis and model adaptation under data drift.</p><a class="text-link" href="#mentoring">Meet the student researchers <span aria-hidden="true">↗</span></a></article>
+                    <article class="collaboration-item"><p class="item-label">Industry × academia</p><h3>AT&amp;T Research &amp;<br>Cornell University</h3><p>Collaborative work on PipeLens and ongoing research on debugging failures in agentic trajectories.</p><a class="text-link" href="#pipelens">Explore PipeLens <span aria-hidden="true">↗</span></a><a class="text-link" href="#agentic-ai">Agentic debugging <span aria-hidden="true">↗</span></a></article>
+                    <article class="collaboration-item"><p class="item-label">International research</p><h3>Université Paris Cité</h3><p>Research collaboration and student mentorship on regional performance diagnosis and model adaptation under data drift.</p><a class="text-link" href="#refair">Explore ReFair <span aria-hidden="true">↗</span></a></article>
                     <article class="collaboration-item"><p class="item-label">Human-centered systems</p><h3>Purdue Virtual Reality Lab</h3><p>FANSHIELD explores predictive obstacle assessment and anticipatory safety for outdoor extended reality.</p><a class="text-link" href="#fanshield">Explore FANSHIELD <span aria-hidden="true">↗</span></a></article>
-                    <article class="collaboration-item"><p class="item-label">Research &amp; mentorship</p><h3>Purdue Computer Science</h3><p>Student research mentorship through the NSF CISE REU program, with a focus on the reliability of agentic AI systems.</p><a class="text-link" href="#mentoring">Explore research mentorship <span aria-hidden="true">↗</span></a></article>
+                    <article class="collaboration-item"><p class="item-label">Research &amp; mentorship</p><h3>Purdue Computer Science</h3><p>Student research mentorship through the NSF CISE REU program, with a focus on the reliability of agentic AI systems.</p><a class="text-link" href="#multi-agent-benchmarking">Explore multi-agent benchmarking <span aria-hidden="true">↗</span></a></article>
                 </div>
                 <div class="funding-note"><span class="item-label">Research supported by</span><a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2237149" target="_blank" rel="noopener noreferrer">National Science Foundation · Award 2237149 <span aria-hidden="true">↗</span></a><a href="https://casmi.northwestern.edu/research/projects/data-biases.html" target="_blank" rel="noopener noreferrer">CASMI <span aria-hidden="true">↗</span></a></div>
             </div>
@@ -282,12 +314,21 @@
         <section class="portfolio-section page-width" id="mentoring" aria-labelledby="mentoring-title">
             <div class="section-heading">
                 <div><p class="eyebrow">03 / Mentoring &amp; teaching</p><h2 id="mentoring-title">Research grows<br>when we share it.</h2></div>
-                <p class="section-intro">I mentor student researchers on ML pipeline reliability, data drift, and agentic AI, alongside teaching in data management and mathematics.</p>
+                <p class="section-intro">Student researchers I mentor at Purdue University and through our international collaboration with Université Paris Cité.</p>
             </div>
-            <div class="mentoring-list" aria-label="Research mentees">
-                <article class="mentee"><div class="mentee-heading"><span class="mentee-number" aria-hidden="true">01</span><div><h3>Ritwik Jayaraman</h3><p>Computer Science · Purdue University</p></div></div><div class="mentee-project"><p class="item-label">NSF CISE REU program</p><p>Reliability of agentic AI systems and debugging failures in agentic trajectories.</p></div><p class="entry-date">2026–2027</p></article>
-                <article class="mentee"><div class="mentee-heading"><span class="mentee-number" aria-hidden="true">02</span><div><h3>Wail Ouaret</h3><p>National School of Artificial Intelligence · Algeria</p></div></div><div class="mentee-project"><p class="item-label">Collaboration with Université Paris Cité</p><p>ReFair: regional performance diagnosis and selective model adaptation under data drift.</p><span class="small-note">Manuscript under review at VLDB 2027</span></div><p class="entry-date">2026</p></article>
-                <article class="mentee"><div class="mentee-heading"><span class="mentee-number" aria-hidden="true">03</span><div><h3>Burton Lu</h3><p>Computer and Information Technology · Purdue University</p></div></div><div class="mentee-project"><p class="item-label">ML pipeline reliability</p><p>Evaluating performance-based drift detection for localizing data corruption in ML pipelines.</p></div><p class="entry-date">2025–2026</p></article>
+            <div class="mentoring-list" aria-label="Research mentee profiles">
+                <article class="mentee">
+                    <div class="mentee-heading"><span class="mentee-number" aria-hidden="true">01</span><div><h3>Ritwik Jayaraman</h3><p>Computer Science · Purdue University</p><p class="mentee-program">NSF CISE REU program</p></div></div>
+                    <p class="entry-date">2026–2027</p>
+                </article>
+                <article class="mentee">
+                    <div class="mentee-heading"><span class="mentee-number" aria-hidden="true">02</span><div><h3>Wail Ouaret</h3><p>National School of Artificial Intelligence · Algeria</p><p class="mentee-program">Through the collaboration with Université Paris Cité</p></div></div>
+                    <p class="entry-date">2026</p>
+                </article>
+                <article class="mentee">
+                    <div class="mentee-heading"><span class="mentee-number" aria-hidden="true">03</span><div><h3>Burton Lu</h3><p>Computer and Information Technology · Purdue University</p></div></div>
+                    <p class="entry-date">2025–2026</p>
+                </article>
             </div>
             <div class="teaching-grid">
                 <article class="teaching-item"><p class="item-label">Teaching assistant · Purdue University</p><h3>Enterprise Data Management</h3><p class="entry-date">CNIT 39200 · Spring 2026 · Returning Spring 2027</p><p>Instructed four database laboratory sections as an alternate teaching assistant, supporting 76 students through hands-on database concepts and assignments.</p><p class="teaching-stat"><strong>4</strong> lab sections <span aria-hidden="true">/</span> <strong>76</strong> students</p></article>
