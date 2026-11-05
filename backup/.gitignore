@@ -1,0 +1,3 @@
+# Keep complete local snapshots and safety archives out of the public repository.
+/site-before-portfolio-2026-11-05/full-site/
+/site-before-restore-*.tar.gz
