@@ -1,10 +1,14 @@
 # jahid674.github.io
 
-Personal research portfolio for Jahid Hasan, built with plain HTML, CSS, and
+Academic website for Jahid Hasan, built with plain HTML, CSS, and
 JavaScript for GitHub Pages. No build step or external JavaScript dependencies.
 
-The portfolio is organized around selected work, collaborations, mentoring and
-teaching, research experience and education, the academic CV, news, and contact.
+The website is organized around Research, Experience and Education, Mentoring and
+Teaching, the academic CV, News, and Contact. Research has three areas:
+AI pipeline management (PipeLens, Sentinel, and both agentic projects), Data and
+Fairness (DataSift and ReFair), and ML Systems (FANSHIELD). All projects use one
+responsive two-column grid, with no paper figures. Collaboration logos appear at
+the end of Research instead of in a separate section.
 Project filters and the mobile menu progressively enhance the page; all content
 and links remain available without JavaScript. Existing education, experience,
 projects, CV, and contact page URLs still redirect to their original sections.
@@ -15,11 +19,13 @@ papers clearly labeled. Update the downloadable CV by replacing `resume.pdf` and
 changing its cache version in the page links.
 
 Every research project has a publication-stage badge: Published, Submitted, or
-Ongoing. Category filters summarize the visible projects by stage. Keep student
-research descriptions and collaborators in Work; Mentoring lists student profiles,
-affiliations, program context, and mentorship dates. The ongoing agentic debugging
+Ongoing. Category filters do not show numerical project or stage counts. Keep
+student names in Mentoring profiles rather than project descriptions; profiles
+include affiliations, program context, and mentorship dates. The ongoing agentic debugging
 project is a collaboration with AT&T Research and Cornell University. Keep the
 multi-agent benchmarking project high level until publication as well.
+
+Logo provenance is recorded in [collaboration-assets/README.md](collaboration-assets/README.md).
 
 ## Previous version and restoration
 

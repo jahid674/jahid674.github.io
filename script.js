@@ -28,27 +28,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const projects = Array.from(document.querySelectorAll(".research-project[data-category]"));
     const filterButtons = Array.from(document.querySelectorAll("[data-filter]"));
-    const toolbar = document.querySelector(".work-toolbar");
-    const filterStatus = document.querySelector(".filter-status");
+    const toolbar = document.querySelector(".research-toolbar");
+    const filterAnnouncement = document.getElementById("research-filter-announcement");
     function applyFilter(category) {
-        let count = 0;
-        const statuses = { published: 0, submitted: 0, ongoing: 0 };
         projects.forEach(function (project) {
             project.hidden = category !== "all" && project.dataset.category !== category;
-            if (!project.hidden) {
-                count++;
-                if (project.dataset.status in statuses) statuses[project.dataset.status]++;
-            }
         });
         filterButtons.forEach(function (button) {
             button.setAttribute("aria-pressed", String(button.dataset.filter === category));
         });
-        if (filterStatus) {
-            const summary = [count + (count === 1 ? " project" : " projects")];
-            Object.keys(statuses).forEach(function (status) {
-                if (statuses[status]) summary.push(statuses[status] + " " + status);
+        if (filterAnnouncement) {
+            const selected = filterButtons.find(function (button) {
+                return button.dataset.filter === category;
             });
-            filterStatus.textContent = summary.join(" · ");
+            filterAnnouncement.textContent = category === "all" ? "Showing all research." :
+                "Showing research in " + selected.textContent.trim() + ".";
         }
     }
     if (toolbar && projects.length) {
