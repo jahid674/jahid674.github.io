@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
         document.addEventListener("click", function (event) {
             if (!event.target.closest(".site-header")) closeMenu();
         });
-        const mobileLayout = window.matchMedia("(max-width: 760px)");
+        const mobileLayout = window.matchMedia("(max-width: 900px)");
         mobileLayout.addEventListener("change", closeMenu);
     }
 

@@ -1,13 +1,16 @@
 # jahid674.github.io
 
-Academic website for Jahid Hasan, built with plain HTML, CSS, and
+Personal academic website for Jahid Hasan, built with plain HTML, CSS, and
 JavaScript for GitHub Pages. No build step or external JavaScript dependencies.
 
-The website is organized around Research, Experience and Education, Mentoring and
-Teaching, the academic CV, News, and Contact. Research has three areas:
+The website opens with a personal biography and a photo/contact sidebar, followed
+by News, Research, Experience and Education, Teaching and Mentoring, the academic
+CV, and Contact. Use simple section headings, readable text, and unboxed research
+entries to keep the presentation closer to a personal academic homepage.
+Research has three areas:
 AI pipeline management (PipeLens, Sentinel, and both agentic projects), Data and
 Fairness (DataSift and ReFair), and ML Systems (FANSHIELD). All projects use one
-responsive two-column grid, with no paper figures. Collaboration logos appear at
+responsive two-column layout, with no paper figures. Collaboration logos appear at
 the end of Research instead of in a separate section.
 Project filters and the mobile menu progressively enhance the page; all content
 and links remain available without JavaScript. Existing education, experience,
@@ -28,6 +31,10 @@ multi-agent benchmarking project high level until publication as well.
 Logo provenance is recorded in [collaboration-assets/README.md](collaboration-assets/README.md).
 
 ## Previous version and restoration
+
+The academic layout from before the November 6 personal website update is saved
+on [the academic-layout backup branch](https://github.com/jahid674/jahid674.github.io/tree/backup/academic-layout-2026-11-06).
+The original pre-portfolio backup described below is also preserved.
 
 The complete version from before the portfolio redesign is saved in
 `backup/site-before-portfolio-2026-11-05/full-site/`. Every original file has a
