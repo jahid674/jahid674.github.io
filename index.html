@@ -12,14 +12,26 @@
     <meta property="og:image" content="https://raw.githubusercontent.com/jahid674/jahid674.github.io/eca0a41b6fd5123d5b0fd9b067347457b09ef651/photo.jpeg">
     <title>Jahid Hasan | Purdue University</title>
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="style.css?v=20261106-2">
-    <script src="script.js?v=20261106-1" defer></script>
+    <script>
+        (function () {
+            var requested = new URLSearchParams(window.location.search).get("theme");
+            var saved = null;
+            try { saved = window.localStorage.getItem("jahid-site-theme"); } catch (error) {}
+            var theme = requested === "dark" || requested === "light" ? requested :
+                saved === "dark" ? "dark" : "light";
+            document.documentElement.dataset.theme = theme;
+            document.querySelector('meta[name="theme-color"]').setAttribute("content", theme === "dark" ? "#000000" : "#ffffff");
+        })();
+    </script>
+    <link rel="stylesheet" href="style.css?v=20261106-3">
+    <script src="script.js?v=20261106-3" defer></script>
 </head>
 <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
     <header class="site-header">
         <div class="header-inner">
             <a class="brand" href="#about" aria-label="Jahid Hasan, introduction">Jahid Hasan</a>
+            <button class="theme-toggle" type="button" aria-label="Switch to dark theme" hidden>Dark</button>
             <button class="menu-toggle" type="button" aria-controls="primary-navigation" aria-expanded="false" hidden>Menu <span aria-hidden="true">+</span></button>
             <nav id="primary-navigation" aria-label="Main navigation">
                 <a href="#about">About</a>

@@ -1,4 +1,30 @@
 document.addEventListener("DOMContentLoaded", function () {
+    const themeButton = document.querySelector(".theme-toggle");
+    function applyTheme(theme) {
+        document.documentElement.dataset.theme = theme;
+        const isDark = theme === "dark";
+        const themeMeta = document.querySelector('meta[name="theme-color"]');
+        if (themeMeta) themeMeta.setAttribute("content", isDark ? "#000000" : "#ffffff");
+        if (themeButton) {
+            themeButton.textContent = isDark ? "Light" : "Dark";
+            themeButton.setAttribute("aria-label", "Switch to " + (isDark ? "light" : "dark") + " theme");
+            themeButton.hidden = false;
+        }
+    }
+    applyTheme(document.documentElement.dataset.theme === "dark" ? "dark" : "light");
+    if (themeButton) {
+        themeButton.addEventListener("click", function () {
+            const theme = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
+            applyTheme(theme);
+            try { window.localStorage.setItem("jahid-site-theme", theme); } catch (error) {}
+            try {
+                const url = new URL(window.location.href);
+                url.searchParams.set("theme", theme);
+                window.history.replaceState(null, "", url);
+            } catch (error) {}
+        });
+    }
+
     const menuButton = document.querySelector(".menu-toggle");
     const navigation = document.getElementById("primary-navigation");
     if (menuButton && navigation) {

@@ -32,6 +32,9 @@ Logo provenance is recorded in [collaboration-assets/README.md](collaboration-as
 
 ## Previous version and restoration
 
+The exact light-theme template from before the dark preview is saved on
+[the light-theme backup branch](https://github.com/jahid674/jahid674.github.io/tree/backup/light-theme-2026-11-06).
+
 The academic layout from before the November 6 personal website update is saved
 on [the academic-layout backup branch](https://github.com/jahid674/jahid674.github.io/tree/backup/academic-layout-2026-11-06).
 The original pre-portfolio backup described below is also preserved.
@@ -52,6 +55,16 @@ python3 backup/site-before-portfolio-2026-11-05/restore.py
 
 The script checks every saved file, archives the current site, and restores the
 previous version. The older September backup is preserved as well.
+
+## Light and dark themes
+
+The light theme remains the default for first-time visitors. Open `/?theme=dark`
+to preview the black background, or `/?theme=light` to return directly to the light
+theme. The header's Light/Dark button switches immediately and remembers the
+visitor's choice in local storage. An explicit theme in the URL overrides that
+saved preference. Previewing a URL alone does not change the saved preference.
+Printing always uses the light palette. The layout, text, CV, and research content
+are shared by both themes.
 
 ## Local preview
 
